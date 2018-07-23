@@ -67,6 +67,7 @@ module.exports = env => {
         target: nativescriptTarget,
         entry: {
             bundle: entryPath,
+            ...((platform === "android") ? { androidActivity: "./android-activity.ts" } : {})
         },
         output: {
             pathinfo: false,
