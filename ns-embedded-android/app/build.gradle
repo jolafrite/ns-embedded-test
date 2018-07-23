@@ -18,6 +18,8 @@ android {
     }
 }
 
+def supportVersion = project.hasProperty("supportVersion") ? project.supportVersion : "23.3.0"
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
@@ -29,4 +31,10 @@ dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.aar'])
     implementation "com.android.support:multidex:1.0.3"
+
+    implementation 'com.orhanobut:hawk:2.0.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+
+    implementation "com.android.support:appcompat-v7:$supportVersion"
+    implementation "com.android.support:recyclerview-v7:$supportVersion"
 }
