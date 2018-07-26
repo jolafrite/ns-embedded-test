@@ -146,7 +146,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./main.aot.ts","vendor"]);
+/******/ 	deferredModules.push(["./main.ts","vendor"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -157,8 +157,8 @@ module.exports =
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./cars/cars.module.ngfactory": [
-		"./cars/cars.module.ngfactory.js",
+	"./cars/cars.module": [
+		"./cars/cars.module.ts",
 		"vendor",
 		0
 	]
@@ -185,12 +185,69 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
+/***/ "./android-activity.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NativeScriptActivity", function() { return NativeScriptActivity; });
+/* harmony import */ var ui_frame__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/tns-core-modules/ui/frame/frame.js");
+/* harmony import */ var ui_frame__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ui_frame__WEBPACK_IMPORTED_MODULE_0__);
+/// <reference path="../node_modules/tns-platform-declarations/android.d.ts" />
+
+var NativeScriptActivity = /** @class */ (function (_super) {
+    __extends(NativeScriptActivity, _super);
+    function NativeScriptActivity() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    NativeScriptActivity.prototype.onCreate = function (savedInstanceState) {
+        if (!this._callbacks) {
+            Object(ui_frame__WEBPACK_IMPORTED_MODULE_0__["setActivityCallbacks"])(this);
+        }
+        this._callbacks.onCreate(this, savedInstanceState, _super.prototype.onCreate);
+    };
+    NativeScriptActivity.prototype.onSaveInstanceState = function (outState) {
+        this._callbacks.onSaveInstanceState(this, outState, _super.prototype.onSaveInstanceState);
+    };
+    NativeScriptActivity.prototype.onStart = function () {
+        this._callbacks.onStart(this, _super.prototype.onStart);
+    };
+    NativeScriptActivity.prototype.onStop = function () {
+        this._callbacks.onStop(this, _super.prototype.onStop);
+    };
+    NativeScriptActivity.prototype.onDestroy = function () {
+        this._callbacks.onDestroy(this, _super.prototype.onDestroy);
+    };
+    NativeScriptActivity.prototype.onBackPressed = function () {
+        this._callbacks.onBackPressed(this, _super.prototype.onBackPressed);
+    };
+    NativeScriptActivity.prototype.onRequestPermissionsResult = function (requestCode, permissions, grantResults) {
+        this._callbacks.onRequestPermissionsResult(this, requestCode, permissions, grantResults, undefined /*TODO: Enable if needed*/);
+    };
+    NativeScriptActivity.prototype.onActivityResult = function (requestCode, resultCode, data) {
+        this._callbacks.onActivityResult(this, requestCode, resultCode, data, _super.prototype.onActivityResult);
+    };
+    NativeScriptActivity = __decorate([
+        JavaProxy("nativescript.org.ns_embedded_android.NativeScriptActivity")
+    ], NativeScriptActivity);
+    return NativeScriptActivity;
+}(android.app.Activity));
+
+
+
+/***/ }),
+
 /***/ "./app-routing.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/router/index.js");
+/* harmony import */ var nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__);
+
+
 var routes = [
     { path: "", redirectTo: "/cars", pathMatch: "full" },
     { path: "cars", loadChildren: "./cars/cars.module#CarsModule" }
@@ -198,6 +255,12 @@ var routes = [
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
+    AppRoutingModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__["NativeScriptRouterModule"].forRoot(routes)],
+            exports: [nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__["NativeScriptRouterModule"]]
+        })
+    ], AppRoutingModule);
     return AppRoutingModule;
 }());
 
@@ -205,47 +268,10 @@ var AppRoutingModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./app.component.ngfactory.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./app.component.html":
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RenderType_AppComponent", function() { return RenderType_AppComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_AppComponent_0", function() { return View_AppComponent_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_AppComponent_Host_0", function() { return View_AppComponent_Host_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponentNgFactory", function() { return AppComponentNgFactory; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/router/page-router-outlet.js");
-/* harmony import */ var nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("../node_modules/nativescript-angular/router/ns-location-strategy.js");
-/* harmony import */ var nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("../node_modules/nativescript-angular/platform-providers.js");
-/* harmony import */ var nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("../node_modules/nativescript-angular/router/ns-route-reuse-strategy.js");
-/* harmony import */ var nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./app.component.ts");
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-var styles_AppComponent = [];
-var RenderType_AppComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({ encapsulation: 2, styles: styles_AppComponent, data: {} });
-
-function View_AppComponent_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 16777216, null, null, 1, "page-router-outlet", [], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 147456, null, 0, nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_1__["PageRouterOutlet"], [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ChildrenOutletContexts"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], [8, null], nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_3__["NSLocationStrategy"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_4__["DEVICE"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_4__["PAGE_FACTORY"], nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_5__["NSRouteReuseStrategy"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]], null, null)], null, null); }
-function View_AppComponent_Host_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "ns-app", [], null, null, null, View_AppComponent_0, RenderType_AppComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 49152, null, 0, _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], [], null, null)], null, null); }
-var AppComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("ns-app", _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], View_AppComponent_Host_0, {}, {}, []);
-
-
+module.exports = "<page-router-outlet></page-router-outlet>\n"
 
 /***/ }),
 
@@ -255,83 +281,19 @@ var AppComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"](
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
     }
+    AppComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "ns-app",
+            template: __webpack_require__("./app.component.html")
+        })
+    ], AppComponent);
     return AppComponent;
 }());
-
-
-
-/***/ }),
-
-/***/ "./app.module.ngfactory.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModuleNgFactory", function() { return AppModuleNgFactory; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./app.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./app.component.ts");
-/* harmony import */ var _node_modules_nativescript_angular_common_detached_loader_ngfactory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("../node_modules/nativescript-angular/common/detached-loader.ngfactory.js");
-/* harmony import */ var _node_modules_angular_router_router_ngfactory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("../node_modules/@angular/router/router.ngfactory.js");
-/* harmony import */ var _app_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./app.component.ngfactory.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("../node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("../node_modules/nativescript-angular/directives/dialogs.js");
-/* harmony import */ var nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("../node_modules/nativescript-angular/router/ns-location-strategy.js");
-/* harmony import */ var nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("../node_modules/nativescript-angular/platform-providers.js");
-/* harmony import */ var nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var tns_core_modules_ui_frame_frame__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("../node_modules/tns-core-modules/ui/frame/frame.js");
-/* harmony import */ var tns_core_modules_ui_frame_frame__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(tns_core_modules_ui_frame_frame__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("../node_modules/tns-core-modules/ui/page/page.js");
-/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var nativescript_angular_renderer__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("../node_modules/nativescript-angular/renderer.js");
-/* harmony import */ var nativescript_angular_renderer__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_renderer__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("../node_modules/nativescript-angular/router/ns-platform-location.js");
-/* harmony import */ var nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("../node_modules/nativescript-angular/router/router-extensions.js");
-/* harmony import */ var nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__("../node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__("../node_modules/nativescript-angular/nativescript.module.js");
-/* harmony import */ var nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var nativescript_angular_common__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__("../node_modules/nativescript-angular/common.js");
-/* harmony import */ var nativescript_angular_common__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_common__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__("../node_modules/nativescript-angular/router/router.module.js");
-/* harmony import */ var nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__("../node_modules/nativescript-angular/router/ns-route-reuse-strategy.js");
-/* harmony import */ var nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__("./app-routing.module.ts");
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var AppModuleNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcmf"](_app_module__WEBPACK_IMPORTED_MODULE_1__["AppModule"], [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]], function (_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmod"]([_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵCodegenComponentFactoryResolver"], [[8, [_node_modules_nativescript_angular_common_detached_loader_ngfactory__WEBPACK_IMPORTED_MODULE_3__["DetachedLoaderNgFactory"], _node_modules_angular_router_router_ngfactory__WEBPACK_IMPORTED_MODULE_4__["ɵEmptyOutletComponentNgFactory"], _app_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__["AppComponentNgFactory"]]], [3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleRef"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_ID"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_f"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_j"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["KeyValueDiffers"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_k"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_l"], [[3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgLocalization"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgLocaleLocalization"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_6__["ɵangular_packages_common_common_a"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_7__["ModalDialogService"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_7__["ModalDialogService"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_8__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__["DEVICE"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__["getDefaultDevice"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, tns_core_modules_ui_frame_frame__WEBPACK_IMPORTED_MODULE_10__["Frame"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__["getDefaultFrame"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_11__["Page"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__["getDefaultPage"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, nativescript_angular_renderer__WEBPACK_IMPORTED_MODULE_12__["NativeScriptRendererFactory"], nativescript_angular_renderer__WEBPACK_IMPORTED_MODULE_12__["NativeScriptRendererFactory"], [[2, nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__["APP_ROOT_VIEW"]], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__["DEVICE"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_core__WEBPACK_IMPORTED_MODULE_0__["SystemJsNgModuleLoader"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["SystemJsNgModuleLoader"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], [2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["SystemJsNgModuleLoaderConfig"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"], null, [nativescript_angular_renderer__WEBPACK_IMPORTED_MODULE_12__["NativeScriptRendererFactory"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_13__["NativescriptPlatformLocation"], nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_13__["NativescriptPlatformLocation"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_8__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_14__["RouterExtensions"], nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_14__["RouterExtensions"], [_angular_router__WEBPACK_IMPORTED_MODULE_15__["Router"], nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_8__["NSLocationStrategy"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__["FrameService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_router__WEBPACK_IMPORTED_MODULE_15__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_f"], [_angular_router__WEBPACK_IMPORTED_MODULE_15__["Router"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_router__WEBPACK_IMPORTED_MODULE_15__["NoPreloading"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["NoPreloading"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_router__WEBPACK_IMPORTED_MODULE_15__["PreloadingStrategy"], null, [_angular_router__WEBPACK_IMPORTED_MODULE_15__["NoPreloading"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](135680, _angular_router__WEBPACK_IMPORTED_MODULE_15__["RouterPreloader"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["RouterPreloader"], [_angular_router__WEBPACK_IMPORTED_MODULE_15__["Router"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleFactoryLoader"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["PreloadingStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_router__WEBPACK_IMPORTED_MODULE_15__["PreloadAllModules"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["PreloadAllModules"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgProbeToken"], function () { return [_angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_b"]()]; }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_router__WEBPACK_IMPORTED_MODULE_15__["ROUTER_INITIALIZER"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_i"], [_angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_g"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_BOOTSTRAP_LISTENER"], function (p0_0) { return [p0_0]; }, [_angular_router__WEBPACK_IMPORTED_MODULE_15__["ROUTER_INITIALIZER"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ErrorHandler"], nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_16__["errorHandlerFactory"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_g"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_g"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_INITIALIZER"], function (p0_0) { return [_angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_h"](p0_0)]; }, [_angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_g"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationInitStatus"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationInitStatus"], [[2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_INITIALIZER"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](131584, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵConsole"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ErrorHandler"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationInitStatus"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationModule"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationModule"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, nativescript_angular_common__WEBPACK_IMPORTED_MODULE_17__["NativeScriptCommonModule"], nativescript_angular_common__WEBPACK_IMPORTED_MODULE_17__["NativeScriptCommonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_16__["NativeScriptModule"], nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_16__["NativeScriptModule"], [[3, nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_16__["NativeScriptModule"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_a"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_d"], [[3, _angular_router__WEBPACK_IMPORTED_MODULE_15__["Router"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_router__WEBPACK_IMPORTED_MODULE_15__["UrlSerializer"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["DefaultUrlSerializer"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_router__WEBPACK_IMPORTED_MODULE_15__["ChildrenOutletContexts"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["ChildrenOutletContexts"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__["FrameService"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__["FrameService"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_8__["NSLocationStrategy"], nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_18__["provideLocationStrategy"], [[3, nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_8__["NSLocationStrategy"]], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_9__["FrameService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_common__WEBPACK_IMPORTED_MODULE_6__["PlatformLocation"], nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_13__["NativescriptPlatformLocation"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_8__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_router__WEBPACK_IMPORTED_MODULE_15__["ROUTER_CONFIGURATION"], {}, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_common__WEBPACK_IMPORTED_MODULE_6__["LocationStrategy"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_c"], [_angular_common__WEBPACK_IMPORTED_MODULE_6__["PlatformLocation"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_6__["APP_BASE_HREF"]], _angular_router__WEBPACK_IMPORTED_MODULE_15__["ROUTER_CONFIGURATION"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_common__WEBPACK_IMPORTED_MODULE_6__["Location"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["Location"], [_angular_common__WEBPACK_IMPORTED_MODULE_6__["LocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleFactoryLoader"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["SystemJsNgModuleLoader"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], [2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["SystemJsNgModuleLoaderConfig"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_router__WEBPACK_IMPORTED_MODULE_15__["ROUTES"], function () { return [[{ path: "", redirectTo: "/cars", pathMatch: "full" }, { path: "cars", loadChildren: "./cars/cars.module#CarsModule" }]]; }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_19__["NSRouteReuseStrategy"], nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_19__["NSRouteReuseStrategy"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_8__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](2048, _angular_router__WEBPACK_IMPORTED_MODULE_15__["RouteReuseStrategy"], null, [nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_19__["NSRouteReuseStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_router__WEBPACK_IMPORTED_MODULE_15__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_e"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["UrlSerializer"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["ChildrenOutletContexts"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["Location"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleFactoryLoader"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["ROUTES"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["ROUTER_CONFIGURATION"], [2, _angular_router__WEBPACK_IMPORTED_MODULE_15__["UrlHandlingStrategy"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_15__["RouteReuseStrategy"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_router__WEBPACK_IMPORTED_MODULE_15__["RouterModule"], _angular_router__WEBPACK_IMPORTED_MODULE_15__["RouterModule"], [[2, _angular_router__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_router_router_a"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_15__["Router"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_18__["NativeScriptRouterModule"], nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_18__["NativeScriptRouterModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _app_routing_module__WEBPACK_IMPORTED_MODULE_20__["AppRoutingModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_20__["AppRoutingModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _app_module__WEBPACK_IMPORTED_MODULE_1__["AppModule"], _app_module__WEBPACK_IMPORTED_MODULE_1__["AppModule"], [])]); });
 
 
 
@@ -343,9 +305,35 @@ var AppModuleNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcmf"](_ap
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/nativescript.module.js");
+/* harmony import */ var nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./app.component.ts");
+
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            bootstrap: [
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]
+            ],
+            imports: [
+                nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_1__["NativeScriptModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]
+            ],
+            declarations: [
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]
+            ],
+            schemas: [
+                _angular_core__WEBPACK_IMPORTED_MODULE_0__["NO_ERRORS_SCHEMA"]
+            ]
+        })
+    ], AppModule);
     return AppModule;
 }());
 
@@ -368,13 +356,13 @@ exports.push([module.i, "/**\n * Convenient single import for light variables\n 
 
 /***/ }),
 
-/***/ "./main.aot.ts":
+/***/ "./main.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var nativescript_angular_platform_static__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/nativescript-angular/platform-static.js");
-/* harmony import */ var nativescript_angular_platform_static__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_platform_static__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var nativescript_angular_platform__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/nativescript-angular/platform.js");
+/* harmony import */ var nativescript_angular_platform__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_platform__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/nativescript-angular/platform-providers.js");
 /* harmony import */ var nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_2__);
@@ -382,12 +370,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tns_core_modules_application__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(tns_core_modules_application__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var tns_core_modules_ui_layouts_grid_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("../node_modules/tns-core-modules/ui/layouts/grid-layout/grid-layout.js");
 /* harmony import */ var tns_core_modules_ui_layouts_grid_layout__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(tns_core_modules_ui_layouts_grid_layout__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _app_module_ngfactory__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./app.module.ngfactory.js");
+/* harmony import */ var _app_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./app.module.ts");
 /* harmony import */ var _shared_kinvey_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./shared/kinvey.common.ts");
 
         if (!global["__snapshot"]) {
             __webpack_require__("../node_modules/tns-core-modules/ui/frame/frame.js");
 __webpack_require__("../node_modules/tns-core-modules/ui/frame/activity.js");
+__webpack_require__("./android-activity.ts");
         }
 
         
@@ -417,8 +406,8 @@ Object(tns_core_modules_application__WEBPACK_IMPORTED_MODULE_3__["run"])({
         };
         var extraProviders = [{ provide: nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_2__["APP_ROOT_VIEW"], useValue: root }];
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
-        Object(nativescript_angular_platform_static__WEBPACK_IMPORTED_MODULE_0__["platformNativeScript"])(appOptions, extraProviders)
-            .bootstrapModuleFactory(_app_module_ngfactory__WEBPACK_IMPORTED_MODULE_5__["AppModuleNgFactory"]);
+        Object(nativescript_angular_platform__WEBPACK_IMPORTED_MODULE_0__["platformNativeScriptDynamic"])(appOptions, extraProviders)
+            .bootstrapModule(_app_module__WEBPACK_IMPORTED_MODULE_5__["AppModule"]);
         return root;
     }
 });

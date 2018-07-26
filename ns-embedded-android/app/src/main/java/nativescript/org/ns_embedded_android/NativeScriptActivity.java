@@ -5,7 +5,7 @@
  */
 package nativescript.org.ns_embedded_android;
 
-@com.tns.JavaScriptImplementation(javaScriptFile = "./androidActivity.js")
+@com.tns.JavaScriptImplementation(javaScriptFile = "./bundle.js")
 public class NativeScriptActivity extends android.app.Activity implements com.tns.NativeScriptHashCodeProvider {
 	public NativeScriptActivity(){
 		super();

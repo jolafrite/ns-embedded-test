@@ -16,6 +16,7 @@ module.exports = env => {
     const appComponents = [
         "tns-core-modules/ui/frame",
         "tns-core-modules/ui/frame/activity",
+        resolve(__dirname, "app/android-activity"),
     ];
 
     const platform = env && (env.android && "android" || env.ios && "ios");
@@ -50,7 +51,7 @@ module.exports = env => {
     const appResourcesFullPath = resolve(projectRoot, appResourcesPath);
 
     const entryModule = aot ?
-        nsWebpack.getAotEntryModule(appFullPath) : 
+        nsWebpack.getAotEntryModule(appFullPath) :
         `${nsWebpack.getEntryModule(appFullPath)}.ts`;
     const entryPath = `.${sep}${entryModule}`;
 
@@ -67,7 +68,6 @@ module.exports = env => {
         target: nativescriptTarget,
         entry: {
             bundle: entryPath,
-            ...((platform === "android") ? { androidActivity: "./android-activity.ts" } : {})
         },
         output: {
             pathinfo: false,
