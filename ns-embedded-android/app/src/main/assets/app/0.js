@@ -1,137 +1,16 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([[0],{
 
-/***/ "./cars/car-detail-edit/car-detail-edit.component.ngfactory.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./cars/car-detail-edit/car-detail-edit.component.html":
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RenderType_CarDetailEditComponent", function() { return RenderType_CarDetailEditComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_CarDetailEditComponent_0", function() { return View_CarDetailEditComponent_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_CarDetailEditComponent_Host_0", function() { return View_CarDetailEditComponent_Host_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarDetailEditComponentNgFactory", function() { return CarDetailEditComponentNgFactory; });
-/* harmony import */ var _car_detail_edit_component_scss_shim_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./cars/car-detail-edit/car-detail-edit.component.scss.shim.ngstyle.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _node_modules_nativescript_angular_directives_action_bar_ngfactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/nativescript-angular/directives/action-bar.ngfactory.js");
-/* harmony import */ var nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("../node_modules/nativescript-angular/directives/action-bar.js");
-/* harmony import */ var nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("../node_modules/tns-core-modules/ui/page/page.js");
-/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("../node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var nativescript_angular_forms_value_accessors_text_value_accessor__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("../node_modules/nativescript-angular/forms/value-accessors/text-value-accessor.js");
-/* harmony import */ var nativescript_angular_forms_value_accessors_text_value_accessor__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_forms_value_accessors_text_value_accessor__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var nativescript_angular_forms_value_accessors_number_value_accessor__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("../node_modules/nativescript-angular/forms/value-accessors/number-value-accessor.js");
-/* harmony import */ var nativescript_angular_forms_value_accessors_number_value_accessor__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_forms_value_accessors_number_value_accessor__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _my_image_add_remove_my_image_add_remove_component_ngfactory__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("./cars/car-detail-edit/my-image-add-remove/my-image-add-remove.component.ngfactory.js");
-/* harmony import */ var _my_image_add_remove_my_image_add_remove_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("./cars/car-detail-edit/my-image-add-remove/my-image-add-remove.component.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("../node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _my_list_selector_my_list_selector_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("./cars/car-detail-edit/my-list-selector/my-list-selector.component.ngfactory.js");
-/* harmony import */ var nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("../node_modules/nativescript-angular/directives/dialogs.js");
-/* harmony import */ var nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("../node_modules/nativescript-angular/router/ns-location-strategy.js");
-/* harmony import */ var nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _my_list_selector_my_list_selector_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("./cars/car-detail-edit/my-list-selector/my-list-selector.component.ts");
-/* harmony import */ var nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__("../node_modules/nativescript-angular/router/page-router-outlet.js");
-/* harmony import */ var nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__("./cars/shared/car-edit.service.ts");
-/* harmony import */ var _car_detail_edit_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__("./cars/car-detail-edit/car-detail-edit.component.ts");
-/* harmony import */ var _shared_car_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__("./cars/shared/car.service.ts");
-/* harmony import */ var nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__("../node_modules/nativescript-angular/router/router-extensions.js");
-/* harmony import */ var nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_19__);
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var styles_CarDetailEditComponent = [_car_detail_edit_component_scss_shim_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
-var RenderType_CarDetailEditComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({ encapsulation: 0, styles: styles_CarDetailEditComponent, data: {} });
-
-function View_CarDetailEditComponent_1(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 0, "Label", [["class", "ng-invalid-image"], ["text", "Image field is required"]], null, null, null, null, null))], null, null); }
-function View_CarDetailEditComponent_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 10, "ActionBar", [["class", "action-bar"]], null, null, null, _node_modules_nativescript_angular_directives_action_bar_ngfactory__WEBPACK_IMPORTED_MODULE_2__["View_ActionBarComponent_0"], _node_modules_nativescript_angular_directives_action_bar_ngfactory__WEBPACK_IMPORTED_MODULE_2__["RenderType_ActionBarComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 49152, null, 0, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__["ActionBarComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_4__["Page"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, 0, 1, "NavigationButton", [["visibility", "collapsed"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](3, 147456, null, 0, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__["NavigationButtonDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], [2, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__["ActionBarScope"]]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, 0, 2, "ActionItem", [["android.position", "left"], ["ios.position", "left"]], null, [[null, "tap"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("tap" === en)) {
-        var pd_0 = (_co.onCancelButtonTap() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](5, 147456, null, 0, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__["ActionItemDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], [2, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__["ActionBarScope"]]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 0, "Label", [["class", "action-item"], ["text", "Cancel"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, 0, 0, "Label", [["class", "action-bar-title"], ["horizontalAlignment", "center"], ["text", "Edit Car Details"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](8, 0, null, 0, 2, "ActionItem", [["android.position", "right"], ["ios.position", "right"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](9, 147456, null, 0, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__["ActionItemDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], [2, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__["ActionBarScope"]]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](10, 0, null, null, 0, "Label", [["class", "action-item"], ["text", "Done"], ["verticalAlignment", "center"]], [[8, "isEnabled", 0], [8, "isUserInteractionEnabled", 0]], [[null, "tap"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("tap" === en)) {
-        var pd_0 = (_co.onDoneButtonTap() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](11, 0, null, null, 69, "GridLayout", [["class", "page page-content"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](12, 0, null, null, 67, "ScrollView", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](13, 0, null, null, 66, "StackLayout", [["class", "car-list"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](14, 0, null, null, 0, "Label", [["class", "car-list-odd"], ["text", "CAR MAKE"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](15, 0, null, null, 7, "TextField", [["class", "car-list-even"], ["hint", "Car make field is required"], ["required", ""]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "touch"], [null, "textChange"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("touch" === en)) {
-        var pd_0 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 18).onTouched() !== false);
-        ad = (pd_0 && ad);
-    } if (("textChange" === en)) {
-        var pd_1 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 18).onChange($event.value) !== false);
-        ad = (pd_1 && ad);
-    } if (("ngModelChange" === en)) {
-        var pd_2 = ((_co.car.name = $event) !== false);
-        ad = (pd_2 && ad);
-    } return ad; }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](16, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"], [], { required: [0, "required"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"], function (p0_0) { return [p0_0]; }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](18, 16384, null, 0, nativescript_angular_forms_value_accessors_text_value_accessor__WEBPACK_IMPORTED_MODULE_6__["TextValueAccessor"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"], function (p0_0) { return [p0_0]; }, [nativescript_angular_forms_value_accessors_text_value_accessor__WEBPACK_IMPORTED_MODULE_6__["TextValueAccessor"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](20, 671744, [["makeModel", 4]], 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], [[8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"]], [8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"]]], { model: [0, "model"] }, { update: "ngModelChange" }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](22, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"]]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](23, 0, null, null, 13, "GridLayout", [["class", "car-list-odd"], ["columns", "*, auto"], ["rows", "*, 55, *"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](24, 0, null, null, 0, "Label", [["text", "PRICE PER DAY"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](25, 0, null, null, 3, "Label", [["class", "text-primary car-list-price"], ["col", "1"], ["horizontalAlignment", "right"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](26, 0, null, null, 2, "FormattedString", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](27, 0, null, null, 0, "Span", [["text", "\u20AC"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](28, 0, null, null, 0, "Span", [], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](29, 0, null, null, 6, "StackLayout", [["colSpan", "2"], ["row", "1"], ["verticalAlignment", "center"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](30, 0, null, null, 5, "Slider", [], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "valueChange"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("valueChange" === en)) {
-        var pd_0 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 31).onChange($event.value) !== false);
-        ad = (pd_0 && ad);
-    } if (("ngModelChange" === en)) {
-        var pd_1 = ((_co.pricePerDay = $event) !== false);
-        ad = (pd_1 && ad);
-    } return ad; }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](31, 16384, null, 0, nativescript_angular_forms_value_accessors_number_value_accessor__WEBPACK_IMPORTED_MODULE_7__["NumberValueAccessor"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"], function (p0_0) { return [p0_0]; }, [nativescript_angular_forms_value_accessors_number_value_accessor__WEBPACK_IMPORTED_MODULE_7__["NumberValueAccessor"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](33, 671744, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], [[8, null], [8, null], [8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"]]], { model: [0, "model"] }, { update: "ngModelChange" }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](35, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"]]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](36, 0, null, null, 0, "Label", [["colSpan", "2"], ["row", "2"], ["text", "ADD OR REMOVE IMAGE"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](37, 0, null, null, 10, "StackLayout", [["class", "car-list-even"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](38, 0, null, null, 7, "MyImageAddRemove", [["required", ""]], [[1, "required", 0], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("ngModelChange" === en)) {
-        var pd_0 = ((_co.carImageUrl = $event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, _my_image_add_remove_my_image_add_remove_component_ngfactory__WEBPACK_IMPORTED_MODULE_8__["View_MyImageAddRemoveComponent_0"], _my_image_add_remove_my_image_add_remove_component_ngfactory__WEBPACK_IMPORTED_MODULE_8__["RenderType_MyImageAddRemoveComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](39, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"], [], { required: [0, "required"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"], function (p0_0) { return [p0_0]; }, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](41, 49152, null, 0, _my_image_add_remove_my_image_add_remove_component__WEBPACK_IMPORTED_MODULE_9__["MyImageAddRemoveComponent"], [], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"], function (p0_0) { return [p0_0]; }, [_my_image_add_remove_my_image_add_remove_component__WEBPACK_IMPORTED_MODULE_9__["MyImageAddRemoveComponent"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](43, 671744, [["imageModel", 4]], 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], [[8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALIDATORS"]], [8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"]]], { model: [0, "model"] }, { update: "ngModelChange" }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](45, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"]]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_CarDetailEditComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](47, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](48, 0, null, null, 0, "Label", [["class", "car-list-odd"], ["text", "CLASS"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](49, 0, null, null, 3, "StackLayout", [["class", "car-list-even"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](50, 16777216, null, null, 2, "MyListSelector", [["tag", "class"]], null, [[null, "selectedValueChange"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("selectedValueChange" === en)) {
-        var pd_0 = ((_co.car.class = $event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, _my_list_selector_my_list_selector_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["View_MyListSelectorComponent_0"], _my_list_selector_my_list_selector_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["RenderType_MyListSelectorComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](512, null, nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_13__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](52, 114688, null, 0, _my_list_selector_my_list_selector_component__WEBPACK_IMPORTED_MODULE_14__["MyListSelectorComponent"], [nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_15__["PageRoute"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_16__["CarEditService"]], { tag: [0, "tag"], items: [1, "items"], selectedValue: [2, "selectedValue"] }, { selectedValueChange: "selectedValueChange" }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](53, 0, null, null, 0, "Label", [["class", "car-list-odd"], ["text", "DOORS"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](54, 0, null, null, 3, "StackLayout", [["class", "car-list-even"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](55, 16777216, null, null, 2, "MyListSelector", [["tag", "doors"]], null, [[null, "selectedValueChange"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("selectedValueChange" === en)) {
-        var pd_0 = ((_co.car.doors = $event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, _my_list_selector_my_list_selector_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["View_MyListSelectorComponent_0"], _my_list_selector_my_list_selector_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["RenderType_MyListSelectorComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](512, null, nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_13__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](57, 114688, null, 0, _my_list_selector_my_list_selector_component__WEBPACK_IMPORTED_MODULE_14__["MyListSelectorComponent"], [nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_15__["PageRoute"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_16__["CarEditService"]], { tag: [0, "tag"], items: [1, "items"], selectedValue: [2, "selectedValue"] }, { selectedValueChange: "selectedValueChange" }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](58, 0, null, null, 0, "Label", [["class", "car-list-odd"], ["text", "SEATS"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](59, 0, null, null, 3, "StackLayout", [["class", "car-list-even"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](60, 16777216, null, null, 2, "MyListSelector", [["tag", "seats"]], null, [[null, "selectedValueChange"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("selectedValueChange" === en)) {
-        var pd_0 = ((_co.car.seats = $event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, _my_list_selector_my_list_selector_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["View_MyListSelectorComponent_0"], _my_list_selector_my_list_selector_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["RenderType_MyListSelectorComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](512, null, nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_13__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](62, 114688, null, 0, _my_list_selector_my_list_selector_component__WEBPACK_IMPORTED_MODULE_14__["MyListSelectorComponent"], [nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_15__["PageRoute"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_16__["CarEditService"]], { tag: [0, "tag"], items: [1, "items"], selectedValue: [2, "selectedValue"] }, { selectedValueChange: "selectedValueChange" }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](63, 0, null, null, 0, "Label", [["class", "car-list-odd"], ["text", "TRANSMISSION"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](64, 0, null, null, 3, "StackLayout", [["class", "car-list-even"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](65, 16777216, null, null, 2, "MyListSelector", [["tag", "transmission"]], null, [[null, "selectedValueChange"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("selectedValueChange" === en)) {
-        var pd_0 = ((_co.car.transmission = $event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, _my_list_selector_my_list_selector_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["View_MyListSelectorComponent_0"], _my_list_selector_my_list_selector_component_ngfactory__WEBPACK_IMPORTED_MODULE_11__["RenderType_MyListSelectorComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](512, null, nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_13__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](67, 114688, null, 0, _my_list_selector_my_list_selector_component__WEBPACK_IMPORTED_MODULE_14__["MyListSelectorComponent"], [nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_15__["PageRoute"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_12__["ModalDialogService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_16__["CarEditService"]], { tag: [0, "tag"], items: [1, "items"], selectedValue: [2, "selectedValue"] }, { selectedValueChange: "selectedValueChange" }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](68, 0, null, null, 11, "GridLayout", [["class", "car-list-odd"], ["columns", "*, auto"], ["rows", "*, 55"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](69, 0, null, null, 0, "Label", [["text", "LUGGAGE"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](70, 0, null, null, 3, "Label", [["class", "text-primary"], ["col", "1"], ["horizontalAlignment", "right"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](71, 0, null, null, 2, "FormattedString", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](72, 0, null, null, 0, "Span", [], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](73, 0, null, null, 0, "Span", [["text", " Bag(s)"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](74, 0, null, null, 5, "Slider", [["colSpan", "2"], ["maxValue", "5"], ["minValue", "0"], ["row", "1"]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "valueChange"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("valueChange" === en)) {
-        var pd_0 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 75).onChange($event.value) !== false);
-        ad = (pd_0 && ad);
-    } if (("ngModelChange" === en)) {
-        var pd_1 = ((_co.luggageValue = $event) !== false);
-        ad = (pd_1 && ad);
-    } return ad; }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](75, 16384, null, 0, nativescript_angular_forms_value_accessors_number_value_accessor__WEBPACK_IMPORTED_MODULE_7__["NumberValueAccessor"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"], function (p0_0) { return [p0_0]; }, [nativescript_angular_forms_value_accessors_number_value_accessor__WEBPACK_IMPORTED_MODULE_7__["NumberValueAccessor"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](77, 671744, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], [[8, null], [8, null], [8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"]]], { model: [0, "model"] }, { update: "ngModelChange" }), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](79, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControl"]]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](80, 0, null, null, 0, "ActivityIndicator", [], [[8, "busy", 0]], null, null, null, null))], function (_ck, _v) { var _co = _v.component; var currVal_10 = ""; _ck(_v, 16, 0, currVal_10); var currVal_11 = _co.car.name; _ck(_v, 20, 0, currVal_11); var currVal_20 = _co.pricePerDay; _ck(_v, 33, 0, currVal_20); var currVal_29 = ""; _ck(_v, 39, 0, currVal_29); var currVal_30 = _co.carImageUrl; _ck(_v, 43, 0, currVal_30); var currVal_31 = !_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 43).valid; _ck(_v, 47, 0, currVal_31); var currVal_32 = "class"; var currVal_33 = _co.carClassOptions; var currVal_34 = _co.car.class; _ck(_v, 52, 0, currVal_32, currVal_33, currVal_34); var currVal_35 = "doors"; var currVal_36 = _co.carDoorOptions; var currVal_37 = _co.car.doors; _ck(_v, 57, 0, currVal_35, currVal_36, currVal_37); var currVal_38 = "seats"; var currVal_39 = _co.carSeatOptions; var currVal_40 = _co.car.seats; _ck(_v, 62, 0, currVal_38, currVal_39, currVal_40); var currVal_41 = "transmission"; var currVal_42 = _co.carTransmissionOptions; var currVal_43 = _co.car.transmission; _ck(_v, 67, 0, currVal_41, currVal_42, currVal_43); var currVal_52 = _co.luggageValue; _ck(_v, 77, 0, currVal_52); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 20).valid && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 43).valid); var currVal_1 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 20).valid && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 43).valid); _ck(_v, 10, 0, currVal_0, currVal_1); var currVal_2 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 16).required ? "" : null); var currVal_3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 22).ngClassUntouched; var currVal_4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 22).ngClassTouched; var currVal_5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 22).ngClassPristine; var currVal_6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 22).ngClassDirty; var currVal_7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 22).ngClassValid; var currVal_8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 22).ngClassInvalid; var currVal_9 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 22).ngClassPending; _ck(_v, 15, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9); var currVal_12 = _co.pricePerDay; _ck(_v, 28, 0, currVal_12); var currVal_13 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 35).ngClassUntouched; var currVal_14 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 35).ngClassTouched; var currVal_15 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 35).ngClassPristine; var currVal_16 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 35).ngClassDirty; var currVal_17 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 35).ngClassValid; var currVal_18 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 35).ngClassInvalid; var currVal_19 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 35).ngClassPending; _ck(_v, 30, 0, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19); var currVal_21 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 39).required ? "" : null); var currVal_22 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 45).ngClassUntouched; var currVal_23 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 45).ngClassTouched; var currVal_24 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 45).ngClassPristine; var currVal_25 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 45).ngClassDirty; var currVal_26 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 45).ngClassValid; var currVal_27 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 45).ngClassInvalid; var currVal_28 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 45).ngClassPending; _ck(_v, 38, 0, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25, currVal_26, currVal_27, currVal_28); var currVal_44 = _co.luggageValue; _ck(_v, 72, 0, currVal_44); var currVal_45 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 79).ngClassUntouched; var currVal_46 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 79).ngClassTouched; var currVal_47 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 79).ngClassPristine; var currVal_48 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 79).ngClassDirty; var currVal_49 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 79).ngClassValid; var currVal_50 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 79).ngClassInvalid; var currVal_51 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 79).ngClassPending; _ck(_v, 74, 0, currVal_45, currVal_46, currVal_47, currVal_48, currVal_49, currVal_50, currVal_51); var currVal_53 = _co.isUpdating; _ck(_v, 80, 0, currVal_53); }); }
-function View_CarDetailEditComponent_Host_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "CarDetailEdit", [], null, null, null, View_CarDetailEditComponent_0, RenderType_CarDetailEditComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 114688, null, 0, _car_detail_edit_component__WEBPACK_IMPORTED_MODULE_17__["CarDetailEditComponent"], [_shared_car_service__WEBPACK_IMPORTED_MODULE_18__["CarService"], _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_16__["CarEditService"], nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_15__["PageRoute"], nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_19__["RouterExtensions"]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
-var CarDetailEditComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("CarDetailEdit", _car_detail_edit_component__WEBPACK_IMPORTED_MODULE_17__["CarDetailEditComponent"], View_CarDetailEditComponent_Host_0, {}, {}, []);
-
-
+module.exports = "<ActionBar class=\"action-bar\">\n    <!--HACK - we should remove the navigation button-->\n    <NavigationButton visibility=\"collapsed\"></NavigationButton>\n    <ActionItem ios.position=\"left\" android.position=\"left\" (tap)=\"onCancelButtonTap()\">\n        <Label text=\"Cancel\" class=\"action-item\"></Label>\n    </ActionItem>\n    <Label class=\"action-bar-title\" text=\"Edit Car Details\" horizontalAlignment=\"center\"></Label>\n    <ActionItem ios.position=\"right\" android.position=\"right\">\n        <Label text=\"Done\" class=\"action-item\" verticalAlignment=\"center\" (tap)=\"onDoneButtonTap()\" \n            [isEnabled]=\"makeModel.valid && imageModel.valid\"\n            [isUserInteractionEnabled]=\"makeModel.valid && imageModel.valid\"></Label>\n    </ActionItem>\n</ActionBar>\n\n<GridLayout class=\"page page-content\">\n    <ScrollView>\n        <StackLayout class=\"car-list\">\n            <Label text=\"CAR MAKE\" class=\"car-list-odd\"></Label>\n            <TextField #makeModel=\"ngModel\" hint=\"Car make field is required\" [(ngModel)]=\"car.name\" class=\"car-list-even\" required></TextField>\n\n            <GridLayout rows=\"*, 55, *\" columns=\"*, auto\" class=\"car-list-odd\">\n                <Label text=\"PRICE PER DAY\"></Label>\n                <Label col=\"1\" horizontalAlignment=\"right\" class=\"text-primary car-list-price\">\n                    <FormattedString>\n                        <Span text=\"€\"></Span>\n                        <Span [text]=\"pricePerDay\"></Span>\n                    </FormattedString>\n                </Label>\n\n                <StackLayout row=\"1\" colSpan=\"2\" verticalAlignment=\"center\">\n                    <Slider [(ngModel)]=\"pricePerDay\"></Slider>\n                </StackLayout>\n\n                <Label text=\"ADD OR REMOVE IMAGE\" row=\"2\" colSpan=\"2\"></Label>\n            </GridLayout>\n\n            <StackLayout class=\"car-list-even\">\n                <!--\n                MyImageAddRemove is a custom component, that wraps an imagepicker plugin and provides custom design and logic\n                on top of it. Check out the custom component at /cars/car-detail-edit/my-image-add-remove.\n                -->\n                <MyImageAddRemove #imageModel=\"ngModel\" [(ngModel)]=\"carImageUrl\" required></MyImageAddRemove>\n                <Label *ngIf=\"!imageModel.valid\" class=\"ng-invalid-image\" text=\"Image field is required\"></Label>\n            </StackLayout>\n\n            <Label class=\"car-list-odd\" text=\"CLASS\"></Label>\n\n            <StackLayout class=\"car-list-even\">\n                <!--\n                MyListSelector is a custom component, that provides custom design and logic for picking an option from a list.\n                Check out the custom component at /cars/car-detail-edit/my-list-selector.\n                -->\n                <MyListSelector [(selectedValue)]=\"car.class\" [items]=\"carClassOptions\" tag=\"class\"></MyListSelector>\n            </StackLayout>\n\n            <Label class=\"car-list-odd\" text=\"DOORS\"></Label>\n\n            <StackLayout class=\"car-list-even\">\n                <MyListSelector [(selectedValue)]=\"car.doors\" [items]=\"carDoorOptions\" tag=\"doors\"></MyListSelector>\n            </StackLayout>\n\n            <Label class=\"car-list-odd\" text=\"SEATS\"></Label>\n\n            <StackLayout class=\"car-list-even\">\n                <MyListSelector [(selectedValue)]=\"car.seats\" [items]=\"carSeatOptions\" tag=\"seats\"></MyListSelector>\n            </StackLayout>\n\n            <Label class=\"car-list-odd\" text=\"TRANSMISSION\"></Label>\n\n            <StackLayout class=\"car-list-even\">\n                <MyListSelector [(selectedValue)]=\"car.transmission\" [items]=\"carTransmissionOptions\" tag=\"transmission\"></MyListSelector>\n            </StackLayout>\n\n            <GridLayout rows=\"*, 55\" columns=\"*, auto\" class=\"car-list-odd\">\n                <Label text=\"LUGGAGE\"></Label>\n                <Label col=\"1\" horizontalAlignment=\"right\" class=\"text-primary\">\n                    <FormattedString>\n                        <Span [text]=\"luggageValue\"></Span>\n                        <Span text=\" Bag(s)\"></Span>\n                    </FormattedString>\n                </Label>\n                <Slider row=\"1\" colSpan=\"2\" minValue=\"0\" maxValue=\"5\" [(ngModel)]=\"luggageValue\"></Slider>\n            </GridLayout>\n        </StackLayout>\n    </ScrollView>\n\n    <ActivityIndicator [busy]=\"isUpdating\"></ActivityIndicator>\n</GridLayout>"
 
 /***/ }),
 
-/***/ "./cars/car-detail-edit/car-detail-edit.component.scss.shim.ngstyle.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./cars/car-detail-edit/car-detail-edit.component.scss":
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-var styles = [".car-list[_ngcontent-%COMP%]   .car-list-even[_ngcontent-%COMP%], .car-list[_ngcontent-%COMP%]   .car-list-odd[_ngcontent-%COMP%] {\n  padding: 10 15;\n  border-bottom-width: 1;\n  border-color: rgba(2, 39, 52, 0.2);\n}\n\n.car-list[_ngcontent-%COMP%]   .car-list-odd[_ngcontent-%COMP%] {\n  background-color: rgba(2, 39, 52, 0.1);\n  color: rgba(2, 39, 52, 0.5);\n}\n\n.car-list[_ngcontent-%COMP%]   .car-list-price[_ngcontent-%COMP%] {\n  width: 35;\n  text-align: right;\n}\n\n.car-list[_ngcontent-%COMP%]   TextField.ng-invalid[_ngcontent-%COMP%] {\n  placeholder-color: #ED473F;\n}\n\n.car-list[_ngcontent-%COMP%]   .ng-invalid-image[_ngcontent-%COMP%] {\n  color: #ED473F;\n}"];
-
-
+module.exports = "/**\n * Convenient single import for light variables\n * Includes base variables with light overrides\n **/\n\n/**\n * Light variable overrides\n **/\n\n/**\n * Theme variables overrides\n**/\n\n.car-list .car-list-even,\n.car-list .car-list-odd {\n  padding: 10 15;\n  border-bottom-width: 1;\n  border-color: rgba(2, 39, 52, 0.2);\n}\n\n.car-list .car-list-odd {\n  background-color: rgba(2, 39, 52, 0.1);\n  color: rgba(2, 39, 52, 0.5);\n}\n\n.car-list .car-list-price {\n  width: 35;\n  text-align: right;\n}\n\n.car-list TextField.ng-invalid {\n  placeholder-color: #ED473F;\n}\n\n.car-list .ng-invalid-image {\n  color: #ED473F;\n}"
 
 /***/ }),
 
@@ -350,6 +229,18 @@ var CarDetailEditComponent = /** @class */ (function () {
             this._carTransmissionOptions.push(transmissionItem);
         }
     };
+    CarDetailEditComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            /*duleId: module.i*/
+            selector: "CarDetailEdit",
+            template: __webpack_require__("./cars/car-detail-edit/car-detail-edit.component.html"),
+            styles: [__webpack_require__("./cars/car-detail-edit/car-detail-edit.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_shared_car_service__WEBPACK_IMPORTED_MODULE_5__["CarService"],
+            _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_4__["CarEditService"],
+            nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__["PageRoute"],
+            nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterExtensions"]])
+    ], CarDetailEditComponent);
     return CarDetailEditComponent;
 }());
 
@@ -392,62 +283,17 @@ var carTransmissionList = [
 
 /***/ }),
 
-/***/ "./cars/car-detail-edit/my-image-add-remove/my-image-add-remove.component.ngfactory.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./cars/car-detail-edit/my-image-add-remove/my-image-add-remove.component.html":
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RenderType_MyImageAddRemoveComponent", function() { return RenderType_MyImageAddRemoveComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_MyImageAddRemoveComponent_0", function() { return View_MyImageAddRemoveComponent_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_MyImageAddRemoveComponent_Host_0", function() { return View_MyImageAddRemoveComponent_Host_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyImageAddRemoveComponentNgFactory", function() { return MyImageAddRemoveComponentNgFactory; });
-/* harmony import */ var _my_image_add_remove_component_scss_shim_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./cars/car-detail-edit/my-image-add-remove/my-image-add-remove.component.scss.shim.ngstyle.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("../node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _my_image_add_remove_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./cars/car-detail-edit/my-image-add-remove/my-image-add-remove.component.ts");
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-var styles_MyImageAddRemoveComponent = [_my_image_add_remove_component_scss_shim_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
-var RenderType_MyImageAddRemoveComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({ encapsulation: 0, styles: styles_MyImageAddRemoveComponent, data: {} });
-
-function View_MyImageAddRemoveComponent_1(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "GridLayout", [["class", "thumb-remove"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 0, "Label", [["class", "fa"], ["horizontalAlignment", "center"], ["text", "\uF014"], ["verticalAlignment", "center"]], null, null, null, null, null))], null, null); }
-function View_MyImageAddRemoveComponent_2(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "GridLayout", [["class", "thumb-add"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 0, "Label", [["class", "fa"], ["horizontalAlignment", "center"], ["text", "\uF030"], ["verticalAlignment", "center"]], null, null, null, null, null))], null, null); }
-function View_MyImageAddRemoveComponent_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 4, "GridLayout", [["class", "thumb"], ["height", "80"], ["horizontalAlignment", "left"], ["width", "80"]], [[8, "backgroundImage", 0]], [[null, "tap"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("tap" === en)) {
-        var pd_0 = (_co.onImageAddRemoveTap() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_MyImageAddRemoveComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_MyImageAddRemoveComponent_2)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](4, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.imageUrl; _ck(_v, 2, 0, currVal_1); var currVal_2 = !_co.imageUrl; _ck(_v, 4, 0, currVal_2); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.imageUrl; _ck(_v, 0, 0, currVal_0); }); }
-function View_MyImageAddRemoveComponent_Host_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 2, "MyImageAddRemove", [], null, null, null, View_MyImageAddRemoveComponent_0, RenderType_MyImageAddRemoveComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵprd"](5120, null, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NG_VALUE_ACCESSOR"], function (p0_0) { return [p0_0]; }, [_my_image_add_remove_component__WEBPACK_IMPORTED_MODULE_4__["MyImageAddRemoveComponent"]]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 49152, null, 0, _my_image_add_remove_component__WEBPACK_IMPORTED_MODULE_4__["MyImageAddRemoveComponent"], [], null, null)], null, null); }
-var MyImageAddRemoveComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("MyImageAddRemove", _my_image_add_remove_component__WEBPACK_IMPORTED_MODULE_4__["MyImageAddRemoveComponent"], View_MyImageAddRemoveComponent_Host_0, {}, {}, []);
-
-
+module.exports = "<GridLayout height=\"80\" width=\"80\" class=\"thumb\" horizontalAlignment=\"left\" [backgroundImage]=\"imageUrl\" (tap)=\"onImageAddRemoveTap()\">\n    <GridLayout class=\"thumb-remove\" *ngIf=\"imageUrl\">\n        <Label text=\"&#xf014;\" class=\"fa\" horizontalAlignment=\"center\" verticalAlignment=\"center\"></Label>\n    </GridLayout>\n    <GridLayout class=\"thumb-add\" *ngIf=\"!imageUrl\">\n        <Label text=\"&#xf030;\" class=\"fa\" horizontalAlignment=\"center\" verticalAlignment=\"center\"></Label>\n    </GridLayout>\n</GridLayout>\n"
 
 /***/ }),
 
-/***/ "./cars/car-detail-edit/my-image-add-remove/my-image-add-remove.component.scss.shim.ngstyle.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./cars/car-detail-edit/my-image-add-remove/my-image-add-remove.component.scss":
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-var styles = [".thumb[_ngcontent-%COMP%] {\n  background-size: cover;\n  background-repeat: no-repeat;\n  font-size: 25;\n  font-weight: bold;\n}\n\n.thumb[_ngcontent-%COMP%]   .thumb-add[_ngcontent-%COMP%] {\n  background-color: transparent;\n  color: rgba(2, 39, 52, 0.2);\n  border-radius: 3;\n  border-width: 1;\n  border-color: rgba(2, 39, 52, 0.2);\n}\n\n.thumb[_ngcontent-%COMP%]   .thumb-remove[_ngcontent-%COMP%] {\n  color: #FFFFFF;\n  background-color: rgba(2, 39, 52, 0.2);\n}"];
-
-
+module.exports = "/**\n * Convenient single import for light variables\n * Includes base variables with light overrides\n **/\n\n/**\n * Light variable overrides\n **/\n\n/**\n * Theme variables overrides\n**/\n\n.thumb {\n  background-size: cover;\n  background-repeat: no-repeat;\n  font-size: 25;\n  font-weight: bold;\n}\n\n.thumb .thumb-add {\n  background-color: transparent;\n  color: rgba(2, 39, 52, 0.2);\n  border-radius: 3;\n  border-width: 1;\n  border-color: rgba(2, 39, 52, 0.2);\n}\n\n.thumb .thumb-remove {\n  color: #FFFFFF;\n  background-color: rgba(2, 39, 52, 0.2);\n}"
 
 /***/ }),
 
@@ -457,7 +303,6 @@ var styles = [".thumb[_ngcontent-%COMP%] {\n  background-size: cover;\n  backgro
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyImageAddRemoveComponent", function() { return MyImageAddRemoveComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵ0", function() { return ɵ0; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var file_system__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/tns-core-modules/file-system/file-system.js");
@@ -473,7 +318,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var tempImageFolderName = "nsimagepicker";
 var noop = function () { }; // tslint:disable-line no-empty
-var ɵ0 = noop;
 var MY_IMAGE_ADD_REMOVE_CONTROL_VALUE_ACCESSOR = {
     provide: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NG_VALUE_ACCESSOR"],
     useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function () { return MyImageAddRemoveComponent; }),
@@ -489,6 +333,7 @@ var MyImageAddRemoveComponent = /** @class */ (function () {
         this.propagateChange = noop;
         this.innerImageUrl = "";
     }
+    MyImageAddRemoveComponent_1 = MyImageAddRemoveComponent;
     Object.defineProperty(MyImageAddRemoveComponent, "imageTempFolder", {
         get: function () {
             return file_system__WEBPACK_IMPORTED_MODULE_2__["knownFolders"].temp().getFolder(tempImageFolderName);
@@ -497,7 +342,7 @@ var MyImageAddRemoveComponent = /** @class */ (function () {
         configurable: true
     });
     MyImageAddRemoveComponent.clearImageTempFolder = function () {
-        MyImageAddRemoveComponent.imageTempFolder.clear();
+        MyImageAddRemoveComponent_1.imageTempFolder.clear();
     };
     Object.defineProperty(MyImageAddRemoveComponent.prototype, "imageUrl", {
         get: function () {
@@ -531,7 +376,7 @@ var MyImageAddRemoveComponent = /** @class */ (function () {
             this.handleImageChange(null);
             return;
         }
-        MyImageAddRemoveComponent.clearImageTempFolder();
+        MyImageAddRemoveComponent_1.clearImageTempFolder();
         this.pickImage();
     };
     MyImageAddRemoveComponent.prototype.pickImage = function () {
@@ -552,86 +397,41 @@ var MyImageAddRemoveComponent = /** @class */ (function () {
         var raisePropertyChange = true;
         var tempImagePath = null;
         if (source) {
-            tempImagePath = file_system__WEBPACK_IMPORTED_MODULE_2__["path"].join(MyImageAddRemoveComponent.imageTempFolder.path, Date.now() + ".jpg");
+            tempImagePath = file_system__WEBPACK_IMPORTED_MODULE_2__["path"].join(MyImageAddRemoveComponent_1.imageTempFolder.path, Date.now() + ".jpg");
             raisePropertyChange = source.saveToFile(tempImagePath, "jpeg");
         }
         if (raisePropertyChange) {
             this.imageUrl = tempImagePath;
         }
     };
+    MyImageAddRemoveComponent = MyImageAddRemoveComponent_1 = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "MyImageAddRemove",
+            /*duleId: module.i*/
+            template: __webpack_require__("./cars/car-detail-edit/my-image-add-remove/my-image-add-remove.component.html"),
+            styles: [__webpack_require__("./cars/car-detail-edit/my-image-add-remove/my-image-add-remove.component.scss")],
+            providers: [MY_IMAGE_ADD_REMOVE_CONTROL_VALUE_ACCESSOR]
+        })
+    ], MyImageAddRemoveComponent);
     return MyImageAddRemoveComponent;
+    var MyImageAddRemoveComponent_1;
 }());
 
 
 
+/***/ }),
+
+/***/ "./cars/car-detail-edit/my-list-selector/my-list-selector-modal-view.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<GridLayout rows=\"auto, *, auto\" verticalAlignment=\"top\" class=\"list-modal-view\">\n    <Label [text]=\"title\" class=\"h3 list-modal-header\"></Label>\n    <RadListView row=\"1\" [items]=\"items\" (itemSelected)=\"onItemSelected($event)\" selectionBehavior=\"Press\" class=\"list-modal-list\">\n        <ng-template tkListItemTemplate let-item=\"item\">\n            <GridLayout>\n                <GridLayout android:visibility=\"collapsed\" columns=\"*,auto\" class=\"list-modal-item\">\n                    <Label [text]=\"item.value\"></Label>\n                    <Label col=\"1\" text=\"&#xf00c;\" \n                        class=\"fa list-modal-view-check\" \n                        [visibility]=\"item.isSelected ? 'visible' : 'collapsed'\"></Label>\n                </GridLayout>\n                <GridLayout ios:visibility=\"collapsed\" columns=\"auto,*\" class=\"list-modal-item\">\n                    <Label text=\"&#xf10c;\" \n                        class=\"fa list-modal-view-icon\" verticalAlignment=\"center\" \n                        [visibility]=\"item.isSelected ? 'collapsed' : 'visible'\"></Label>\n                    <Label text=\"&#xf192;\" \n                        class=\"fa list-modal-view-icon selected\" verticalAlignment=\"center\" \n                        [visibility]=\"item.isSelected ? 'visible' : 'collapsed'\"></Label>\n                    <Label col=\"1\" [text]=\"item.value\"></Label>\n                </GridLayout>\n            </GridLayout>\n        </ng-template>\n    </RadListView>\n    <Button class=\"btn btn-outline\" row=\"3\" text=\"CANCEL\" ios:visibility=\"collapsed\" horizontalAlignment=\"right\" (tap)=\"onCancelButtonTap()\"></Button>\n</GridLayout>"
 
 /***/ }),
 
-/***/ "./cars/car-detail-edit/my-list-selector/my-list-selector-modal-view.component.ngfactory.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./cars/car-detail-edit/my-list-selector/my-list-selector-modal-view.component.scss":
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RenderType_MyListSelectorModalViewComponent", function() { return RenderType_MyListSelectorModalViewComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_MyListSelectorModalViewComponent_0", function() { return View_MyListSelectorModalViewComponent_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_MyListSelectorModalViewComponent_Host_0", function() { return View_MyListSelectorModalViewComponent_Host_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyListSelectorModalViewComponentNgFactory", function() { return MyListSelectorModalViewComponentNgFactory; });
-/* harmony import */ var _my_list_selector_modal_view_component_scss_shim_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./cars/car-detail-edit/my-list-selector/my-list-selector-modal-view.component.scss.shim.ngstyle.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _node_modules_nativescript_ui_listview_angular_listview_directives_ngfactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/nativescript-ui-listview/angular/listview-directives.ngfactory.js");
-/* harmony import */ var nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("../node_modules/nativescript-ui-listview/angular/listview-directives.js");
-/* harmony import */ var nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _my_list_selector_modal_view_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./cars/car-detail-edit/my-list-selector/my-list-selector-modal-view.component.ts");
-/* harmony import */ var nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("../node_modules/nativescript-angular/directives/dialogs.js");
-/* harmony import */ var nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_5__);
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-var styles_MyListSelectorModalViewComponent = [_my_list_selector_modal_view_component_scss_shim_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
-var RenderType_MyListSelectorModalViewComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({ encapsulation: 0, styles: styles_MyListSelectorModalViewComponent, data: {} });
-
-function View_MyListSelectorModalViewComponent_1(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 7, "GridLayout", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 2, "GridLayout", [[":android:visibility", "collapsed"], ["class", "list-modal-item"], ["columns", "*,auto"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 0, "Label", [], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](3, 0, null, null, 0, "Label", [["class", "fa list-modal-view-check"], ["col", "1"], ["text", "\uF00C"]], [[8, "visibility", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 3, "GridLayout", [[":ios:visibility", "collapsed"], ["class", "list-modal-item"], ["columns", "auto,*"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 0, "Label", [["class", "fa list-modal-view-icon"], ["text", "\uF10C"], ["verticalAlignment", "center"]], [[8, "visibility", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 0, "Label", [["class", "fa list-modal-view-icon selected"], ["text", "\uF192"], ["verticalAlignment", "center"]], [[8, "visibility", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 0, "Label", [["col", "1"]], [[8, "text", 0]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = _v.context.item.value; _ck(_v, 2, 0, currVal_0); var currVal_1 = (_v.context.item.isSelected ? "visible" : "collapsed"); _ck(_v, 3, 0, currVal_1); var currVal_2 = (_v.context.item.isSelected ? "collapsed" : "visible"); _ck(_v, 5, 0, currVal_2); var currVal_3 = (_v.context.item.isSelected ? "visible" : "collapsed"); _ck(_v, 6, 0, currVal_3); var currVal_4 = _v.context.item.value; _ck(_v, 7, 0, currVal_4); }); }
-function View_MyListSelectorModalViewComponent_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 7, "GridLayout", [["class", "list-modal-view"], ["rows", "auto, *, auto"], ["verticalAlignment", "top"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 0, "Label", [["class", "h3 list-modal-header"]], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 4, "RadListView", [["class", "list-modal-list"], ["row", "1"], ["selectionBehavior", "Press"]], null, [[null, "itemSelected"], [null, "itemLoading"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("itemLoading" === en)) {
-        var pd_0 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 3).onItemLoading($event) !== false);
-        ad = (pd_0 && ad);
-    } if (("itemSelected" === en)) {
-        var pd_1 = (_co.onItemSelected($event) !== false);
-        ad = (pd_1 && ad);
-    } return ad; }, _node_modules_nativescript_ui_listview_angular_listview_directives_ngfactory__WEBPACK_IMPORTED_MODULE_2__["View_RadListViewComponent_0"], _node_modules_nativescript_ui_listview_angular_listview_directives_ngfactory__WEBPACK_IMPORTED_MODULE_2__["RenderType_RadListViewComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](3, 1359872, null, 1, nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_3__["RadListViewComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["IterableDiffers"]], { items: [0, "items"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](335544320, 1, { itemTemplateQuery: 0 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](0, [[1, 2]], null, 1, null, View_MyListSelectorModalViewComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](6, 81920, null, 0, nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_3__["TKListViewItemDirective"], [nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_3__["RadListViewComponent"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 0, "Button", [[":ios:visibility", "collapsed"], ["class", "btn btn-outline"], ["horizontalAlignment", "right"], ["row", "3"], ["text", "CANCEL"]], null, [[null, "tap"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("tap" === en)) {
-        var pd_0 = (_co.onCancelButtonTap() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null))], function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.items; _ck(_v, 3, 0, currVal_1); _ck(_v, 6, 0); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.title; _ck(_v, 1, 0, currVal_0); }); }
-function View_MyListSelectorModalViewComponent_Host_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "MyListSelectorModalView", [], null, null, null, View_MyListSelectorModalViewComponent_0, RenderType_MyListSelectorModalViewComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 49152, null, 0, _my_list_selector_modal_view_component__WEBPACK_IMPORTED_MODULE_4__["MyListSelectorModalViewComponent"], [nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_5__["ModalDialogParams"]], null, null)], null, null); }
-var MyListSelectorModalViewComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("MyListSelectorModalView", _my_list_selector_modal_view_component__WEBPACK_IMPORTED_MODULE_4__["MyListSelectorModalViewComponent"], View_MyListSelectorModalViewComponent_Host_0, {}, {}, []);
-
-
-
-/***/ }),
-
-/***/ "./cars/car-detail-edit/my-list-selector/my-list-selector-modal-view.component.scss.shim.ngstyle.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-var styles = [".list-modal-view[_ngcontent-%COMP%] {\n  color: #022734;\n  background-color: rgba(2, 39, 52, 0.1);\n}\n\n.list-modal-view[_ngcontent-%COMP%]   .list-modal-item[_ngcontent-%COMP%] {\n  vertical-align: center;\n  margin-bottom: 10;\n}\n\n.list-modal-view[_ngcontent-%COMP%]   .list-modal-header[_ngcontent-%COMP%] {\n  padding: 15;\n}\n\n.list-modal-view[_ngcontent-%COMP%]   .list-modal-item[_ngcontent-%COMP%] {\n  padding: 0 15 10 15;\n}\n\n.list-modal-view[_ngcontent-%COMP%]   .list-modal-view-icon[_ngcontent-%COMP%] {\n  margin-right: 15;\n  margin-top: 2;\n}\n\n.list-modal-view[_ngcontent-%COMP%]   .list-modal-view-icon.selected[_ngcontent-%COMP%] {\n  color: #3A53FF;\n}\n\n.list-modal-view[_ngcontent-%COMP%]   .btn.btn-outline[_ngcontent-%COMP%] {\n  border-color: transparent;\n  font-size: 12;\n  padding-right: 0;\n  text-align: right;\n}"];
-
-
+module.exports = "/**\n * Convenient single import for light variables\n * Includes base variables with light overrides\n **/\n\n/**\n * Light variable overrides\n **/\n\n/**\n * Theme variables overrides\n**/\n\n.list-modal-view {\n  color: #022734;\n  background-color: rgba(2, 39, 52, 0.1);\n}\n\n.list-modal-view .list-modal-item {\n  vertical-align: center;\n  margin-bottom: 10;\n}\n\n.list-modal-view .list-modal-header {\n  padding: 15;\n}\n\n.list-modal-view .list-modal-item {\n  padding: 0 15 10 15;\n}\n\n.list-modal-view .list-modal-view-icon {\n  margin-right: 15;\n  margin-top: 2;\n}\n\n.list-modal-view .list-modal-view-icon.selected {\n  color: #3A53FF;\n}\n\n.list-modal-view .btn.btn-outline {\n  border-color: transparent;\n  font-size: 12;\n  padding-right: 0;\n  text-align: right;\n}"
 
 /***/ }),
 
@@ -641,8 +441,10 @@ var styles = [".list-modal-view[_ngcontent-%COMP%] {\n  color: #022734;\n  backg
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyListSelectorModalViewComponent", function() { return MyListSelectorModalViewComponent; });
-/* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/nativescript-angular/modal-dialog.js");
-/* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/modal-dialog.js");
+/* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1__);
+
 
 var MyListSelectorModalViewComponent = /** @class */ (function () {
     function MyListSelectorModalViewComponent(_params) {
@@ -682,6 +484,15 @@ var MyListSelectorModalViewComponent = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
+    MyListSelectorModalViewComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "MyListSelectorModalView",
+            /*duleId: module.i*/
+            template: __webpack_require__("./cars/car-detail-edit/my-list-selector/my-list-selector-modal-view.component.html"),
+            styles: [__webpack_require__("./cars/car-detail-edit/my-list-selector/my-list-selector-modal-view.component.scss")]
+        }),
+        __metadata("design:paramtypes", [nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1__["ModalDialogParams"]])
+    ], MyListSelectorModalViewComponent);
     return MyListSelectorModalViewComponent;
 }());
 
@@ -689,47 +500,10 @@ var MyListSelectorModalViewComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./cars/car-detail-edit/my-list-selector/my-list-selector.component.ngfactory.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./cars/car-detail-edit/my-list-selector/my-list-selector.component.html":
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RenderType_MyListSelectorComponent", function() { return RenderType_MyListSelectorComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_MyListSelectorComponent_0", function() { return View_MyListSelectorComponent_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_MyListSelectorComponent_Host_0", function() { return View_MyListSelectorComponent_Host_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyListSelectorComponentNgFactory", function() { return MyListSelectorComponentNgFactory; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/directives/dialogs.js");
-/* harmony import */ var nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/nativescript-angular/router/ns-location-strategy.js");
-/* harmony import */ var nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _my_list_selector_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./cars/car-detail-edit/my-list-selector/my-list-selector.component.ts");
-/* harmony import */ var nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("../node_modules/nativescript-angular/router/page-router-outlet.js");
-/* harmony import */ var nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./cars/shared/car-edit.service.ts");
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-var styles_MyListSelectorComponent = [];
-var RenderType_MyListSelectorComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({ encapsulation: 2, styles: styles_MyListSelectorComponent, data: {} });
-
-function View_MyListSelectorComponent_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, "GridLayout", [["columns", "*, auto"]], null, [[null, "tap"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("tap" === en)) {
-        var pd_0 = (_co.onSelectorTap() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 0, "Label", [["class", "text"]], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](2, 0, null, null, 0, "Label", [["class", "fa text-secondary"], ["col", "1"], ["horizontalAlignment", "center"], ["text", "\uF054"], ["verticalAlignment", "center"]], null, null, null, null, null))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.selectedValue; _ck(_v, 1, 0, currVal_0); }); }
-function View_MyListSelectorComponent_Host_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 16777216, null, null, 2, "MyListSelector", [], null, null, null, View_MyListSelectorComponent_0, RenderType_MyListSelectorComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_1__["ModalDialogService"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_1__["ModalDialogService"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_2__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 114688, null, 0, _my_list_selector_component__WEBPACK_IMPORTED_MODULE_3__["MyListSelectorComponent"], [nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_4__["PageRoute"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_1__["ModalDialogService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_5__["CarEditService"]], null, null)], function (_ck, _v) { _ck(_v, 2, 0); }, null); }
-var MyListSelectorComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("MyListSelector", _my_list_selector_component__WEBPACK_IMPORTED_MODULE_3__["MyListSelectorComponent"], View_MyListSelectorComponent_Host_0, { tag: "tag", items: "items", selectedValue: "selectedValue" }, { selectedValueChange: "selectedValueChange" }, []);
-
-
+module.exports = "<GridLayout columns=\"*, auto\" (tap)=\"onSelectorTap()\">\n    <Label class=\"text\" [text]=\"selectedValue\"></Label>\n    <Label text=\"&#xf054;\" class=\"fa text-secondary\" col=\"1\" horizontalAlignment=\"center\" verticalAlignment=\"center\"></Label>\n</GridLayout>\n"
 
 /***/ }),
 
@@ -739,7 +513,6 @@ var MyListSelectorComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0_
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyListSelectorComponent", function() { return MyListSelectorComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵ0", function() { return ɵ0; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/modal-dialog.js");
 /* harmony import */ var nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1__);
@@ -755,7 +528,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var capitalizeFirstLetter = function (s) { return s.charAt(0).toUpperCase() + s.slice(1); };
-var ɵ0 = capitalizeFirstLetter;
 /* ***********************************************************
 * The MyListSelector custom component uses a {N} modal page to let the user select and option
 * from a list. You can also check out the my-list-selector-modal-view.component.ts to see the
@@ -801,63 +573,45 @@ var MyListSelectorComponent = /** @class */ (function () {
             }
         });
     };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], MyListSelectorComponent.prototype, "tag", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Array)
+    ], MyListSelectorComponent.prototype, "items", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], MyListSelectorComponent.prototype, "selectedValue", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", Object)
+    ], MyListSelectorComponent.prototype, "selectedValueChange", void 0);
+    MyListSelectorComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            /*duleId: module.i*/
+            providers: [nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1__["ModalDialogService"]],
+            selector: "MyListSelector",
+            template: __webpack_require__("./cars/car-detail-edit/my-list-selector/my-list-selector.component.html")
+        }),
+        __metadata("design:paramtypes", [nativescript_angular_router__WEBPACK_IMPORTED_MODULE_2__["PageRoute"],
+            nativescript_angular_modal_dialog__WEBPACK_IMPORTED_MODULE_1__["ModalDialogService"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"],
+            _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_4__["CarEditService"]])
+    ], MyListSelectorComponent);
     return MyListSelectorComponent;
 }());
 
 
 
-
 /***/ }),
 
-/***/ "./cars/car-detail/car-detail.component.ngfactory.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./cars/car-detail/car-detail.component.html":
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RenderType_CarDetailComponent", function() { return RenderType_CarDetailComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_CarDetailComponent_0", function() { return View_CarDetailComponent_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_CarDetailComponent_Host_0", function() { return View_CarDetailComponent_Host_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarDetailComponentNgFactory", function() { return CarDetailComponentNgFactory; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _node_modules_nativescript_angular_directives_action_bar_ngfactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/directives/action-bar.ngfactory.js");
-/* harmony import */ var nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/nativescript-angular/directives/action-bar.js");
-/* harmony import */ var nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("../node_modules/tns-core-modules/ui/page/page.js");
-/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _car_detail_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./cars/car-detail/car-detail.component.ts");
-/* harmony import */ var _shared_car_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./cars/shared/car.service.ts");
-/* harmony import */ var nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("../node_modules/nativescript-angular/router/page-router-outlet.js");
-/* harmony import */ var nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("../node_modules/nativescript-angular/router/router-extensions.js");
-/* harmony import */ var nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_7__);
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-var styles_CarDetailComponent = [];
-var RenderType_CarDetailComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({ encapsulation: 2, styles: styles_CarDetailComponent, data: {} });
-
-function View_CarDetailComponent_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 7, "ActionBar", [["class", "action-bar"]], null, null, null, _node_modules_nativescript_angular_directives_action_bar_ngfactory__WEBPACK_IMPORTED_MODULE_1__["View_ActionBarComponent_0"], _node_modules_nativescript_angular_directives_action_bar_ngfactory__WEBPACK_IMPORTED_MODULE_1__["RenderType_ActionBarComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 49152, null, 0, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_2__["ActionBarComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_3__["Page"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](2, 0, null, 0, 1, "NavigationButton", [["android.systemIcon", "ic_menu_back"]], null, [[null, "tap"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("tap" === en)) {
-        var pd_0 = (_co.onBackButtonTap() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 147456, null, 0, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_2__["NavigationButtonDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_2__["ActionBarScope"]]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](4, 0, null, 0, 0, "Label", [["class", "action-bar-title"], ["horizontalAlignment", "center"]], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](5, 0, null, 0, 2, "ActionItem", [["android.position", "right"], ["ios.position", "right"]], null, [[null, "tap"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("tap" === en)) {
-        var pd_0 = (_co.onEditButtonTap() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](6, 147456, null, 0, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_2__["ActionItemDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_2__["ActionBarScope"]]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](7, 0, null, null, 0, "Label", [["class", "action-item"], ["text", "Edit"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](8, 0, null, null, 21, "GridLayout", [["class", "page page-content"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](9, 0, null, null, 20, "ScrollView", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](10, 0, null, null, 19, "GridLayout", [["rows", "auto, auto, auto"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](11, 0, null, null, 0, "Image", [["class", "m-b-15"], ["height", "200"], ["stretch", "aspectFill"]], [[8, "src", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](12, 0, null, null, 0, "StackLayout", [["class", "hr-light m-t-15 m-b-15"], ["row", "1"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](13, 0, null, null, 16, "GridLayout", [["columns", "auto, auto"], ["row", "2"], ["rows", "*,*,*,*,*,*"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](14, 0, null, null, 0, "Label", [["class", "p-l-15 p-b-10 m-r-20 text-secondary"], ["text", "Price"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](15, 0, null, null, 4, "Label", [["class", "text p-b-10"], ["col", "1"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](16, 0, null, null, 3, "FormattedString", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](17, 0, null, null, 0, "Span", [["text", "\u20AC"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](18, 0, null, null, 0, "Span", [], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](19, 0, null, null, 0, "Span", [["text", "/day"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](20, 0, null, null, 0, "Label", [["class", "p-l-15 p-b-10 m-r-20 text-secondary"], ["row", "1"], ["text", "Class"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](21, 0, null, null, 0, "Label", [["class", "text p-b-10"], ["col", "1"], ["row", "1"]], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](22, 0, null, null, 0, "Label", [["class", "p-l-15 p-b-10 m-r-20 text-secondary"], ["row", "2"], ["text", "Doors"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](23, 0, null, null, 0, "Label", [["class", "text p-b-10"], ["col", "1"], ["row", "2"]], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](24, 0, null, null, 0, "Label", [["class", "p-l-15 p-b-10 m-r-20 text-secondary"], ["row", "3"], ["text", "Seats"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](25, 0, null, null, 0, "Label", [["class", "text p-b-10"], ["col", "1"], ["row", "3"]], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](26, 0, null, null, 0, "Label", [["class", "p-l-15 m-r-20 p-b-10 text-secondary"], ["row", "4"], ["text", "Transmission"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](27, 0, null, null, 0, "Label", [["class", "text p-b-10"], ["col", "1"], ["row", "4"]], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](28, 0, null, null, 0, "Label", [["class", "p-l-15 p-b-10 m-r-20 text-secondary"], ["row", "5"], ["text", "Luggage"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](29, 0, null, null, 0, "Label", [["class", "text p-b-10"], ["col", "1"], ["row", "5"]], [[8, "text", 0]], null, null, null, null))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.car.name; _ck(_v, 4, 0, currVal_0); var currVal_1 = _co.car.imageUrl; _ck(_v, 11, 0, currVal_1); var currVal_2 = _co.car.price; _ck(_v, 18, 0, currVal_2); var currVal_3 = _co.car.class; _ck(_v, 21, 0, currVal_3); var currVal_4 = _co.car.doors; _ck(_v, 23, 0, currVal_4); var currVal_5 = _co.car.seats; _ck(_v, 25, 0, currVal_5); var currVal_6 = _co.car.transmission; _ck(_v, 27, 0, currVal_6); var currVal_7 = _co.car.luggage; _ck(_v, 29, 0, currVal_7); }); }
-function View_CarDetailComponent_Host_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "CarDetail", [], null, null, null, View_CarDetailComponent_0, RenderType_CarDetailComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 114688, null, 0, _car_detail_component__WEBPACK_IMPORTED_MODULE_4__["CarDetailComponent"], [_shared_car_service__WEBPACK_IMPORTED_MODULE_5__["CarService"], nativescript_angular_router_page_router_outlet__WEBPACK_IMPORTED_MODULE_6__["PageRoute"], nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_7__["RouterExtensions"]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
-var CarDetailComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵccf"]("CarDetail", _car_detail_component__WEBPACK_IMPORTED_MODULE_4__["CarDetailComponent"], View_CarDetailComponent_Host_0, {}, {}, []);
-
-
+module.exports = "<ActionBar class=\"action-bar\">\n    <NavigationButton android.systemIcon=\"ic_menu_back\" (tap)=\"onBackButtonTap()\">\n    </NavigationButton>\n    <Label class=\"action-bar-title\" [text]=\"car.name\" horizontalAlignment=\"center\"></Label>\n    <ActionItem ios.position=\"right\" android.position=\"right\" (tap)=\"onEditButtonTap()\">\n        <Label text=\"Edit\" class=\"action-item\"></Label>\n    </ActionItem>\n</ActionBar>\n\n<GridLayout class=\"page page-content\">\n    <ScrollView>\n        <GridLayout rows=\"auto, auto, auto\">\n            <Image [src]=\"car.imageUrl\" stretch=\"aspectFill\" height=\"200\" class=\"m-b-15\"></Image>\n\n            <StackLayout row=\"1\" class=\"hr-light m-t-15 m-b-15\"></StackLayout>\n\n            <GridLayout row=\"2\" rows=\"*,*,*,*,*,*\" columns=\"auto, auto\">\n\n                <Label text=\"Price\" class=\"p-l-15 p-b-10 m-r-20 text-secondary\"></Label>\n                <Label col=\"1\" class=\"text p-b-10\">\n                    <FormattedString>\n                        <Span text=\"&euro;\"></Span>\n                        <Span [text]=\"car.price\"></Span>\n                        <Span text=\"/day\"></Span>\n                    </FormattedString>\n                </Label>\n\n                <Label text=\"Class\" class=\"p-l-15 p-b-10 m-r-20 text-secondary\" row=\"1\"></Label>\n                <Label [text]=\"car.class\" row=\"1\" col=\"1\" class=\"text p-b-10\"></Label>\n\n                <Label text=\"Doors\" class=\"p-l-15 p-b-10 m-r-20 text-secondary\" row=\"2\"></Label>\n                <Label [text]=\"car.doors\" row=\"2\" col=\"1\" class=\"text p-b-10\"></Label>\n\n                <Label text=\"Seats\" class=\"p-l-15 p-b-10 m-r-20 text-secondary\" row=\"3\"></Label>\n                <Label [text]=\"car.seats\" row=\"3\" col=\"1\" class=\"text p-b-10\"></Label>\n\n                <Label text=\"Transmission\" class=\"p-l-15 m-r-20 p-b-10 text-secondary\" row=\"4\"></Label>\n                <Label [text]=\"car.transmission\" row=\"4\" col=\"1\" class=\"text p-b-10\"></Label>\n\n                <Label text=\"Luggage\" class=\"p-l-15 p-b-10 m-r-20 text-secondary\" row=\"5\"></Label>\n                <Label [text]=\"car.luggage\" row=\"5\" col=\"1\" class=\"text p-b-10\"></Label>\n            </GridLayout>\n        </GridLayout>\n    </ScrollView>\n</GridLayout>"
 
 /***/ }),
 
@@ -932,6 +686,16 @@ var CarDetailComponent = /** @class */ (function () {
             }
         });
     };
+    CarDetailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "CarDetail",
+            /*duleId: module.i*/
+            template: __webpack_require__("./cars/car-detail/car-detail.component.html")
+        }),
+        __metadata("design:paramtypes", [_shared_car_service__WEBPACK_IMPORTED_MODULE_3__["CarService"],
+            nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__["PageRoute"],
+            nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterExtensions"]])
+    ], CarDetailComponent);
     return CarDetailComponent;
 }());
 
@@ -939,78 +703,17 @@ var CarDetailComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./cars/car-list.component.ngfactory.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./cars/car-list.component.html":
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RenderType_CarListComponent", function() { return RenderType_CarListComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_CarListComponent_0", function() { return View_CarListComponent_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_CarListComponent_Host_0", function() { return View_CarListComponent_Host_0; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarListComponentNgFactory", function() { return CarListComponentNgFactory; });
-/* harmony import */ var _car_list_component_scss_shim_ngstyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./cars/car-list.component.scss.shim.ngstyle.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _node_modules_nativescript_angular_directives_action_bar_ngfactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/nativescript-angular/directives/action-bar.ngfactory.js");
-/* harmony import */ var nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("../node_modules/nativescript-angular/directives/action-bar.js");
-/* harmony import */ var nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("../node_modules/tns-core-modules/ui/page/page.js");
-/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_nativescript_ui_listview_angular_listview_directives_ngfactory__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("../node_modules/nativescript-ui-listview/angular/listview-directives.ngfactory.js");
-/* harmony import */ var nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("../node_modules/nativescript-ui-listview/angular/listview-directives.js");
-/* harmony import */ var nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _car_list_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./cars/car-list.component.ts");
-/* harmony import */ var _shared_car_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("./cars/shared/car.service.ts");
-/* harmony import */ var nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("../node_modules/nativescript-angular/router/router-extensions.js");
-/* harmony import */ var nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_9__);
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-var styles_CarListComponent = [_car_list_component_scss_shim_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
-var RenderType_CarListComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({ encapsulation: 0, styles: styles_CarListComponent, data: {} });
-
-function View_CarListComponent_1(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 23, "StackLayout", [["class", "list-group-item"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 22, "GridLayout", [["class", "list-group-item-content"], ["columns", "*, *"], ["rows", "*, *, *"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 0, "Label", [["class", "text-primary font-weight-bold"]], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](3, 0, null, null, 4, "Label", [["class", "list-group-item-text m-r-5"], ["col", "1"], ["horizontalAlignment", "right"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 3, "FormattedString", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 0, "Span", [["text", "\u20AC"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 0, "Span", [], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 0, "Span", [["text", "/day"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](8, 0, null, null, 0, "StackLayout", [["class", "hr-light m-t-5 m-b-5"], ["colSpan", "2"], ["row", "1"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](9, 0, null, null, 0, "Image", [["class", "m-r-20"], ["height", "120"], ["row", "2"], ["stretch", "aspectFill"]], [[8, "src", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](10, 0, null, null, 13, "StackLayout", [["class", "list-group-item-text"], ["col", "1"], ["row", "2"], ["verticalAlignment", "center"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](11, 0, null, null, 3, "Label", [["class", "p-b-10"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](12, 0, null, null, 2, "FormattedString", [[":ios:fontFamily", "system"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](13, 0, null, null, 0, "Span", [["class", "fa text-primary"], ["text", "\uF1B9   "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](14, 0, null, null, 0, "Span", [], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](15, 0, null, null, 4, "Label", [["class", "p-b-10"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](16, 0, null, null, 3, "FormattedString", [[":ios:fontFamily", "system"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](17, 0, null, null, 0, "Span", [["class", "fa text-primary"], ["text", "\uF085   "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](18, 0, null, null, 0, "Span", [], [[8, "text", 0]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](19, 0, null, null, 0, "Span", [["text", " Transmission"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](20, 0, null, null, 3, "Label", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](21, 0, null, null, 2, "FormattedString", [[":ios:fontFamily", "system"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](22, 0, null, null, 0, "Span", [["class", "fa text-primary"], ["text", "\uF2DC   "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](23, 0, null, null, 0, "Span", [], [[8, "text", 0]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = _v.context.item.name; _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.item.price; _ck(_v, 6, 0, currVal_1); var currVal_2 = _v.context.item.imageUrl; _ck(_v, 9, 0, currVal_2); var currVal_3 = _v.context.item.class; _ck(_v, 14, 0, currVal_3); var currVal_4 = _v.context.item.transmission; _ck(_v, 18, 0, currVal_4); var currVal_5 = (_v.context.item.hasAC ? "Yes" : "No"); _ck(_v, 23, 0, currVal_5); }); }
-function View_CarListComponent_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 4, "ActionBar", [["class", "action-bar"]], null, null, null, _node_modules_nativescript_angular_directives_action_bar_ngfactory__WEBPACK_IMPORTED_MODULE_2__["View_ActionBarComponent_0"], _node_modules_nativescript_angular_directives_action_bar_ngfactory__WEBPACK_IMPORTED_MODULE_2__["RenderType_ActionBarComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 49152, null, 0, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__["ActionBarComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_4__["Page"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, 0, 1, "NavigationButton", [[":ios:visibility", "collapsed"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](3, 147456, null, 0, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__["NavigationButtonDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], [2, nativescript_angular_directives_action_bar__WEBPACK_IMPORTED_MODULE_3__["ActionBarScope"]]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, 0, 0, "Label", [["class", "action-bar-title"], ["horizontalAlignment", "center"], ["text", "Browse"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 6, "GridLayout", [["class", "page page-content"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](6, 0, null, null, 4, "RadListView", [["class", "list-group"]], null, [[null, "itemTap"], [null, "itemLoading"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("itemLoading" === en)) {
-        var pd_0 = (_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵnov"](_v, 7).onItemLoading($event) !== false);
-        ad = (pd_0 && ad);
-    } if (("itemTap" === en)) {
-        var pd_1 = (_co.onCarItemTap($event) !== false);
-        ad = (pd_1 && ad);
-    } return ad; }, _node_modules_nativescript_ui_listview_angular_listview_directives_ngfactory__WEBPACK_IMPORTED_MODULE_5__["View_RadListViewComponent_0"], _node_modules_nativescript_ui_listview_angular_listview_directives_ngfactory__WEBPACK_IMPORTED_MODULE_5__["RenderType_RadListViewComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](7, 1359872, null, 1, nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_6__["RadListViewComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["IterableDiffers"]], { items: [0, "items"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵqud"](335544320, 1, { itemTemplateQuery: 0 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](0, [[1, 2]], null, 1, null, View_CarListComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](10, 81920, null, 0, nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_6__["TKListViewItemDirective"], [nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_6__["RadListViewComponent"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](11, 0, null, null, 0, "ActivityIndicator", [], [[8, "busy", 0]], null, null, null, null))], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.cars; _ck(_v, 7, 0, currVal_0); _ck(_v, 10, 0); }, function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.isLoading; _ck(_v, 11, 0, currVal_1); }); }
-function View_CarListComponent_Host_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "CarsList", [], null, null, null, View_CarListComponent_0, RenderType_CarListComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 114688, null, 0, _car_list_component__WEBPACK_IMPORTED_MODULE_7__["CarListComponent"], [_shared_car_service__WEBPACK_IMPORTED_MODULE_8__["CarService"], nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_9__["RouterExtensions"]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
-var CarListComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("CarsList", _car_list_component__WEBPACK_IMPORTED_MODULE_7__["CarListComponent"], View_CarListComponent_Host_0, {}, {}, []);
-
-
+module.exports = "<ActionBar class=\"action-bar\">\n    <!-- Should remove the navigation button -->\n    <NavigationButton ios:visibility=\"collapsed\"></NavigationButton>\n    <Label class=\"action-bar-title\" text=\"Browse\" horizontalAlignment=\"center\"></Label>\n</ActionBar>\n\n<GridLayout class=\"page page-content\">\n    <RadListView [items]=\"cars\" (itemTap)=\"onCarItemTap($event)\" class=\"list-group\">\n    <!--\n    RadListView is a UI component part of the Progress NativeScript UI set of components.\n    Learn more about the RadListView UI component and how it can be customized in this documentation article:\n    http://docs.telerik.com/devtools/nativescript-ui/Controls/Angular/ListView/getting-started\n    This component is used to display the master list in the master-detail structure.\n    -->\n        <ng-template tkListItemTemplate let-car=\"item\">\n            <StackLayout class=\"list-group-item\">\n                <GridLayout rows=\"*, *, *\" columns=\"*, *\" class=\"list-group-item-content\">\n                    <Label [text]=\"car.name\" class=\"text-primary font-weight-bold\"></Label>\n                    <Label col=\"1\" horizontalAlignment=\"right\" class=\"list-group-item-text m-r-5\">\n                        <FormattedString>\n                            <Span text=\"&euro;\"></Span>\n                            <Span [text]=\"car.price\"></Span>\n                            <Span text=\"/day\"></Span>\n                        </FormattedString>\n                    </Label>\n\n                    <StackLayout row=\"1\" class=\"hr-light m-t-5 m-b-5\" colSpan=\"2\"></StackLayout>\n\n                    <Image row=\"2\" [src]=\"car.imageUrl\" stretch=\"aspectFill\" height=\"120\" class=\"m-r-20\"></Image>\n                    <StackLayout row=\"2\" col=\"1\" verticalAlignment=\"center\" class=\"list-group-item-text\">\n                        <Label class=\"p-b-10\">\n                            <!-- set fontFamily=\"system\" to workaround \"Service exited due to Segmentation fault: 11\" error -->\n                            <FormattedString ios:fontFamily=\"system\">\n                                <Span text=\"&#xf1b9;   \" class=\"fa text-primary\"></Span>\n                                <Span [text]=\"car.class\"></Span>\n                            </FormattedString>\n                        </Label>\n                        <Label class=\"p-b-10\">\n                            <!-- set fontFamily=\"system\" to workaround \"Service exited due to Segmentation fault: 11\" error -->\n                            <FormattedString ios:fontFamily=\"system\">\n                                <Span text=\"&#xf085;   \" class=\"fa text-primary\"></Span>\n                                <Span [text]=\"car.transmission\"></Span>\n                                <Span text=\" Transmission\"></Span>\n                            </FormattedString>\n                        </Label>\n                        <Label>\n                            <!-- set fontFamily=\"system\" to workaround \"Service exited due to Segmentation fault: 11\" error -->\n                            <FormattedString ios:fontFamily=\"system\">\n                                <Span text=\"&#xf2dc;   \" class=\"fa text-primary\"></Span>\n                                <Span [text]=\"car.hasAC ? 'Yes' : 'No'\"></Span>\n                            </FormattedString>\n                        </Label>\n                    </StackLayout>\n                </GridLayout>\n            </StackLayout>\n        </ng-template>\n    </RadListView>\n\n    <ActivityIndicator [busy]=\"isLoading\"></ActivityIndicator>\n</GridLayout>"
 
 /***/ }),
 
-/***/ "./cars/car-list.component.scss.shim.ngstyle.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./cars/car-list.component.scss":
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-var styles = [".list-group[_ngcontent-%COMP%]   .list-group-item[_ngcontent-%COMP%] {\n  padding: 0 0 8 0;\n  background-color: rgba(2, 39, 52, 0.1);\n}\n\n.list-group[_ngcontent-%COMP%]   .list-group-item[_ngcontent-%COMP%]   .list-group-item-content[_ngcontent-%COMP%] {\n  padding: 8 15 4 15;\n  background-color: #FFFFFF;\n}\n\n.list-group[_ngcontent-%COMP%]   .list-group-item[_ngcontent-%COMP%]   .fa[_ngcontent-%COMP%] {\n  color: #3A53FF;\n}"];
-
-
+module.exports = "/**\n * Convenient single import for light variables\n * Includes base variables with light overrides\n **/\n\n/**\n * Light variable overrides\n **/\n\n/**\n * Theme variables overrides\n**/\n\n.list-group .list-group-item {\n  padding: 0 0 8 0;\n  background-color: rgba(2, 39, 52, 0.1);\n}\n\n.list-group .list-group-item .list-group-item-content {\n  padding: 8 15 4 15;\n  background-color: #FFFFFF;\n}\n\n.list-group .list-group-item .fa {\n  color: #3A53FF;\n}"
 
 /***/ }),
 
@@ -1095,6 +798,16 @@ var CarListComponent = /** @class */ (function () {
             }
         });
     };
+    CarListComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "CarsList",
+            /*duleId: module.i*/
+            template: __webpack_require__("./cars/car-list.component.html"),
+            styles: [__webpack_require__("./cars/car-list.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_shared_car_service__WEBPACK_IMPORTED_MODULE_3__["CarService"],
+            nativescript_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterExtensions"]])
+    ], CarListComponent);
     return CarListComponent;
 }());
 
@@ -1108,108 +821,33 @@ var CarListComponent = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarsRoutingModule", function() { return CarsRoutingModule; });
-/* harmony import */ var _car_detail_edit_car_detail_edit_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./cars/car-detail-edit/car-detail-edit.component.ts");
-/* harmony import */ var _car_detail_car_detail_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./cars/car-detail/car-detail.component.ts");
-/* harmony import */ var _car_list_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./cars/car-list.component.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/router/index.js");
+/* harmony import */ var nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _car_detail_edit_car_detail_edit_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./cars/car-detail-edit/car-detail-edit.component.ts");
+/* harmony import */ var _car_detail_car_detail_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./cars/car-detail/car-detail.component.ts");
+/* harmony import */ var _car_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./cars/car-list.component.ts");
+
+
 
 
 
 var routes = [
-    { path: "", component: _car_list_component__WEBPACK_IMPORTED_MODULE_2__["CarListComponent"] },
-    { path: "car-detail/:id", component: _car_detail_car_detail_component__WEBPACK_IMPORTED_MODULE_1__["CarDetailComponent"] },
-    { path: "car-detail-edit/:id", component: _car_detail_edit_car_detail_edit_component__WEBPACK_IMPORTED_MODULE_0__["CarDetailEditComponent"] }
+    { path: "", component: _car_list_component__WEBPACK_IMPORTED_MODULE_4__["CarListComponent"] },
+    { path: "car-detail/:id", component: _car_detail_car_detail_component__WEBPACK_IMPORTED_MODULE_3__["CarDetailComponent"] },
+    { path: "car-detail-edit/:id", component: _car_detail_edit_car_detail_edit_component__WEBPACK_IMPORTED_MODULE_2__["CarDetailEditComponent"] }
 ];
 var CarsRoutingModule = /** @class */ (function () {
     function CarsRoutingModule() {
     }
+    CarsRoutingModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__["NativeScriptRouterModule"].forChild(routes)],
+            exports: [nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__["NativeScriptRouterModule"]]
+        })
+    ], CarsRoutingModule);
     return CarsRoutingModule;
 }());
-
-
-
-/***/ }),
-
-/***/ "./cars/cars.module.ngfactory.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarsModuleNgFactory", function() { return CarsModuleNgFactory; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _cars_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./cars/cars.module.ts");
-/* harmony import */ var _node_modules_angular_router_router_ngfactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/@angular/router/router.ngfactory.js");
-/* harmony import */ var _car_list_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./cars/car-list.component.ngfactory.js");
-/* harmony import */ var _car_detail_car_detail_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./cars/car-detail/car-detail.component.ngfactory.js");
-/* harmony import */ var _car_detail_edit_car_detail_edit_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./cars/car-detail-edit/car-detail-edit.component.ngfactory.js");
-/* harmony import */ var _car_detail_edit_my_list_selector_my_list_selector_modal_view_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./cars/car-detail-edit/my-list-selector/my-list-selector-modal-view.component.ngfactory.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("../node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("../node_modules/nativescript-angular/platform-providers.js");
-/* harmony import */ var nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("../node_modules/nativescript-angular/router/ns-location-strategy.js");
-/* harmony import */ var nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("../node_modules/nativescript-angular/router/router.module.js");
-/* harmony import */ var nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("../node_modules/nativescript-angular/directives/dialogs.js");
-/* harmony import */ var nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var tns_core_modules_ui_frame_frame__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("../node_modules/tns-core-modules/ui/frame/frame.js");
-/* harmony import */ var tns_core_modules_ui_frame_frame__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(tns_core_modules_ui_frame_frame__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("../node_modules/tns-core-modules/ui/page/page.js");
-/* harmony import */ var tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("../node_modules/nativescript-angular/router/ns-platform-location.js");
-/* harmony import */ var nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__("../node_modules/nativescript-angular/router/router-extensions.js");
-/* harmony import */ var nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__("../node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__("../node_modules/nativescript-angular/router/ns-route-reuse-strategy.js");
-/* harmony import */ var nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__("../node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _shared_car_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__("./cars/shared/car.service.ts");
-/* harmony import */ var _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__("./cars/shared/car-edit.service.ts");
-/* harmony import */ var nativescript_angular_common__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__("../node_modules/nativescript-angular/common.js");
-/* harmony import */ var nativescript_angular_common__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_common__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _cars_routing_module__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__("./cars/cars-routing.module.ts");
-/* harmony import */ var nativescript_angular_forms_forms_module__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__("../node_modules/nativescript-angular/forms/forms.module.js");
-/* harmony import */ var nativescript_angular_forms_forms_module__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_forms_forms_module__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__("../node_modules/nativescript-ui-listview/angular/listview-directives.js");
-/* harmony import */ var nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_24__);
-/* harmony import */ var _car_list_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__("./cars/car-list.component.ts");
-/* harmony import */ var _car_detail_car_detail_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__("./cars/car-detail/car-detail.component.ts");
-/* harmony import */ var _car_detail_edit_car_detail_edit_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__("./cars/car-detail-edit/car-detail-edit.component.ts");
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var CarsModuleNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcmf"](_cars_module__WEBPACK_IMPORTED_MODULE_1__["CarsModule"], [], function (_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmod"]([_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵCodegenComponentFactoryResolver"], [[8, [_node_modules_angular_router_router_ngfactory__WEBPACK_IMPORTED_MODULE_2__["ɵEmptyOutletComponentNgFactory"], _car_list_component_ngfactory__WEBPACK_IMPORTED_MODULE_3__["CarListComponentNgFactory"], _car_detail_car_detail_component_ngfactory__WEBPACK_IMPORTED_MODULE_4__["CarDetailComponentNgFactory"], _car_detail_edit_car_detail_edit_component_ngfactory__WEBPACK_IMPORTED_MODULE_5__["CarDetailEditComponentNgFactory"], _car_detail_edit_my_list_selector_my_list_selector_modal_view_component_ngfactory__WEBPACK_IMPORTED_MODULE_6__["MyListSelectorModalViewComponentNgFactory"]]], [3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleRef"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgLocalization"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgLocaleLocalization"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_7__["ɵangular_packages_common_common_a"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_8__["FrameService"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_8__["FrameService"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_9__["NSLocationStrategy"], nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_10__["provideLocationStrategy"], [[3, nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_9__["NSLocationStrategy"]], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_8__["FrameService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_11__["ModalDialogService"], nativescript_angular_directives_dialogs__WEBPACK_IMPORTED_MODULE_11__["ModalDialogService"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_9__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_8__["DEVICE"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_8__["getDefaultDevice"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, tns_core_modules_ui_frame_frame__WEBPACK_IMPORTED_MODULE_12__["Frame"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_8__["getDefaultFrame"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, tns_core_modules_ui_page_page__WEBPACK_IMPORTED_MODULE_13__["Page"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_8__["getDefaultPage"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_common__WEBPACK_IMPORTED_MODULE_7__["LocationStrategy"], null, [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_9__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_14__["NativescriptPlatformLocation"], nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_14__["NativescriptPlatformLocation"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_9__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common__WEBPACK_IMPORTED_MODULE_7__["PlatformLocation"], nativescript_angular_router_ns_platform_location__WEBPACK_IMPORTED_MODULE_14__["NativescriptPlatformLocation"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_9__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_15__["RouterExtensions"], nativescript_angular_router_router_extensions__WEBPACK_IMPORTED_MODULE_15__["RouterExtensions"], [_angular_router__WEBPACK_IMPORTED_MODULE_16__["Router"], nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_9__["NSLocationStrategy"], nativescript_angular_platform_providers__WEBPACK_IMPORTED_MODULE_8__["FrameService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_17__["NSRouteReuseStrategy"], nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_17__["NSRouteReuseStrategy"], [nativescript_angular_router_ns_location_strategy__WEBPACK_IMPORTED_MODULE_9__["NSLocationStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_router__WEBPACK_IMPORTED_MODULE_16__["RouteReuseStrategy"], null, [nativescript_angular_router_ns_route_reuse_strategy__WEBPACK_IMPORTED_MODULE_17__["NSRouteReuseStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_forms__WEBPACK_IMPORTED_MODULE_18__["ɵangular_packages_forms_forms_i"], _angular_forms__WEBPACK_IMPORTED_MODULE_18__["ɵangular_packages_forms_forms_i"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _shared_car_service__WEBPACK_IMPORTED_MODULE_19__["CarService"], _shared_car_service__WEBPACK_IMPORTED_MODULE_19__["CarService"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_20__["CarEditService"], _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_20__["CarEditService"], [_shared_car_service__WEBPACK_IMPORTED_MODULE_19__["CarService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_router__WEBPACK_IMPORTED_MODULE_16__["RouterModule"], _angular_router__WEBPACK_IMPORTED_MODULE_16__["RouterModule"], [[2, _angular_router__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_router_router_a"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_16__["Router"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common__WEBPACK_IMPORTED_MODULE_7__["CommonModule"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["CommonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, nativescript_angular_common__WEBPACK_IMPORTED_MODULE_21__["NativeScriptCommonModule"], nativescript_angular_common__WEBPACK_IMPORTED_MODULE_21__["NativeScriptCommonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_10__["NativeScriptRouterModule"], nativescript_angular_router_router_module__WEBPACK_IMPORTED_MODULE_10__["NativeScriptRouterModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _cars_routing_module__WEBPACK_IMPORTED_MODULE_22__["CarsRoutingModule"], _cars_routing_module__WEBPACK_IMPORTED_MODULE_22__["CarsRoutingModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_forms__WEBPACK_IMPORTED_MODULE_18__["ɵangular_packages_forms_forms_bb"], _angular_forms__WEBPACK_IMPORTED_MODULE_18__["ɵangular_packages_forms_forms_bb"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_forms__WEBPACK_IMPORTED_MODULE_18__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_18__["FormsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, nativescript_angular_forms_forms_module__WEBPACK_IMPORTED_MODULE_23__["NativeScriptFormsModule"], nativescript_angular_forms_forms_module__WEBPACK_IMPORTED_MODULE_23__["NativeScriptFormsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_24__["NativeScriptUIListViewModule"], nativescript_ui_listview_angular_listview_directives__WEBPACK_IMPORTED_MODULE_24__["NativeScriptUIListViewModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _cars_module__WEBPACK_IMPORTED_MODULE_1__["CarsModule"], _cars_module__WEBPACK_IMPORTED_MODULE_1__["CarsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_router__WEBPACK_IMPORTED_MODULE_16__["ROUTES"], function () { return [[{ path: "", component: _car_list_component__WEBPACK_IMPORTED_MODULE_25__["CarListComponent"] }, { path: "car-detail/:id", component: _car_detail_car_detail_component__WEBPACK_IMPORTED_MODULE_26__["CarDetailComponent"] }, { path: "car-detail-edit/:id", component: _car_detail_edit_car_detail_edit_component__WEBPACK_IMPORTED_MODULE_27__["CarDetailEditComponent"] }]]; }, [])]); });
 
 
 
@@ -1221,9 +859,66 @@ var CarsModuleNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcmf"](_c
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarsModule", function() { return CarsModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var nativescript_angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/common.js");
+/* harmony import */ var nativescript_angular_common__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_common__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/nativescript-angular/forms/index.js");
+/* harmony import */ var nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var nativescript_ui_listview_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("../node_modules/nativescript-ui-listview/angular/listview-directives.js");
+/* harmony import */ var nativescript_ui_listview_angular__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(nativescript_ui_listview_angular__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _car_detail_edit_car_detail_edit_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./cars/car-detail-edit/car-detail-edit.component.ts");
+/* harmony import */ var _car_detail_edit_my_image_add_remove_my_image_add_remove_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./cars/car-detail-edit/my-image-add-remove/my-image-add-remove.component.ts");
+/* harmony import */ var _car_detail_edit_my_list_selector_my_list_selector_modal_view_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./cars/car-detail-edit/my-list-selector/my-list-selector-modal-view.component.ts");
+/* harmony import */ var _car_detail_edit_my_list_selector_my_list_selector_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./cars/car-detail-edit/my-list-selector/my-list-selector.component.ts");
+/* harmony import */ var _car_detail_car_detail_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("./cars/car-detail/car-detail.component.ts");
+/* harmony import */ var _car_list_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("./cars/car-list.component.ts");
+/* harmony import */ var _cars_routing_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("./cars/cars-routing.module.ts");
+/* harmony import */ var _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("./cars/shared/car-edit.service.ts");
+/* harmony import */ var _shared_car_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("./cars/shared/car.service.ts");
+
+
+
+
+
+
+ // tslint:disable-line:max-line-length
+
+
+
+
+
+
 var CarsModule = /** @class */ (function () {
     function CarsModule() {
     }
+    CarsModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [
+                _cars_routing_module__WEBPACK_IMPORTED_MODULE_10__["CarsRoutingModule"],
+                nativescript_angular_common__WEBPACK_IMPORTED_MODULE_1__["NativeScriptCommonModule"],
+                nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_2__["NativeScriptFormsModule"],
+                nativescript_ui_listview_angular__WEBPACK_IMPORTED_MODULE_3__["NativeScriptUIListViewModule"]
+            ],
+            declarations: [
+                _car_list_component__WEBPACK_IMPORTED_MODULE_9__["CarListComponent"],
+                _car_detail_car_detail_component__WEBPACK_IMPORTED_MODULE_8__["CarDetailComponent"],
+                _car_detail_edit_car_detail_edit_component__WEBPACK_IMPORTED_MODULE_4__["CarDetailEditComponent"],
+                _car_detail_edit_my_list_selector_my_list_selector_component__WEBPACK_IMPORTED_MODULE_7__["MyListSelectorComponent"],
+                _car_detail_edit_my_list_selector_my_list_selector_modal_view_component__WEBPACK_IMPORTED_MODULE_6__["MyListSelectorModalViewComponent"],
+                _car_detail_edit_my_image_add_remove_my_image_add_remove_component__WEBPACK_IMPORTED_MODULE_5__["MyImageAddRemoveComponent"]
+            ],
+            entryComponents: [
+                _car_detail_edit_my_list_selector_my_list_selector_modal_view_component__WEBPACK_IMPORTED_MODULE_6__["MyListSelectorModalViewComponent"]
+            ],
+            providers: [
+                _shared_car_service__WEBPACK_IMPORTED_MODULE_12__["CarService"],
+                _shared_car_edit_service__WEBPACK_IMPORTED_MODULE_11__["CarEditService"]
+            ],
+            schemas: [
+                _angular_core__WEBPACK_IMPORTED_MODULE_0__["NO_ERRORS_SCHEMA"]
+            ]
+        })
+    ], CarsModule);
     return CarsModule;
 }());
 
@@ -1237,8 +932,10 @@ var CarsModule = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarEditService", function() { return CarEditService; });
-/* harmony import */ var _car_model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./cars/shared/car.model.ts");
-/* harmony import */ var _car_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./cars/shared/car.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _car_model__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./cars/shared/car.model.ts");
+/* harmony import */ var _car_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./cars/shared/car.service.ts");
+
 
 
 var CarEditService = /** @class */ (function () {
@@ -1253,10 +950,14 @@ var CarEditService = /** @class */ (function () {
         if (!this._editModel || this._editModel.id !== id) {
             var car = this._carService.getCarById(id);
             // get fresh editable copy of car model
-            this._editModel = new _car_model__WEBPACK_IMPORTED_MODULE_0__["Car"](car);
+            this._editModel = new _car_model__WEBPACK_IMPORTED_MODULE_1__["Car"](car);
         }
         return this._editModel;
     };
+    CarEditService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_car_service__WEBPACK_IMPORTED_MODULE_2__["CarService"]])
+    ], CarEditService);
     return CarEditService;
 }());
 
@@ -1297,12 +998,14 @@ var Car = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarService", function() { return CarService; });
-/* harmony import */ var file_system__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/tns-core-modules/file-system/file-system.js");
-/* harmony import */ var file_system__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(file_system__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/kinvey-nativescript-sdk/kinvey-nativescript-sdk.js");
-/* harmony import */ var kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _shared_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./shared/config.ts");
-/* harmony import */ var _car_model__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./cars/shared/car.model.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var file_system__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/tns-core-modules/file-system/file-system.js");
+/* harmony import */ var file_system__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(file_system__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/kinvey-nativescript-sdk/kinvey-nativescript-sdk.js");
+/* harmony import */ var kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _shared_config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./shared/config.ts");
+/* harmony import */ var _car_model__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./cars/shared/car.model.ts");
+
 
 
 
@@ -1321,8 +1024,9 @@ var editableProperties = [
 var CarService = /** @class */ (function () {
     function CarService() {
         this.allCars = [];
-        this.carsStore = kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_1__["Kinvey"].DataStore.collection("cars");
+        this.carsStore = kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_2__["Kinvey"].DataStore.collection("cars");
     }
+    CarService_1 = CarService;
     CarService.cloneUpdateModel = function (car) {
         // tslint:disable-next-line:ban-comma-operator
         return editableProperties.reduce(function (a, e) { return (a[e] = car[e], a); }, { _id: car.id });
@@ -1340,7 +1044,7 @@ var CarService = /** @class */ (function () {
         return this.login().then(function () {
             return _this.carsStore.sync();
         }).then(function () {
-            var sortByNameQuery = new kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_1__["Kinvey"].Query();
+            var sortByNameQuery = new kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_2__["Kinvey"].Query();
             sortByNameQuery.ascending("name");
             var stream = _this.carsStore.find(sortByNameQuery);
             return stream.toPromise();
@@ -1348,18 +1052,18 @@ var CarService = /** @class */ (function () {
             _this.allCars = [];
             data.forEach(function (carData) {
                 carData.id = carData._id;
-                var car = new _car_model__WEBPACK_IMPORTED_MODULE_3__["Car"](carData);
+                var car = new _car_model__WEBPACK_IMPORTED_MODULE_4__["Car"](carData);
                 _this.allCars.push(car);
             });
             return _this.allCars;
         });
     };
     CarService.prototype.update = function (carModel) {
-        var updateModel = CarService.cloneUpdateModel(carModel);
+        var updateModel = CarService_1.cloneUpdateModel(carModel);
         return this.carsStore.save(updateModel);
     };
     CarService.prototype.uploadImage = function (remoteFullPath, localFullPath) {
-        var imageFile = file_system__WEBPACK_IMPORTED_MODULE_0__["File"].fromPath(localFullPath);
+        var imageFile = file_system__WEBPACK_IMPORTED_MODULE_1__["File"].fromPath(localFullPath);
         var imageContent = imageFile.readSync();
         var metadata = {
             filename: imageFile.name,
@@ -1367,11 +1071,11 @@ var CarService = /** @class */ (function () {
             size: imageContent.length,
             public: true
         };
-        return kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_1__["Kinvey"].Files.upload(imageFile, metadata, { timeout: 2147483647 })
+        return kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_2__["Kinvey"].Files.upload(imageFile, metadata, { timeout: 2147483647 })
             .then(function (uploadedFile) {
-            var query = new kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_1__["Kinvey"].Query();
+            var query = new kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_2__["Kinvey"].Query();
             query.equalTo("_id", uploadedFile._id);
-            return kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_1__["Kinvey"].Files.find(query);
+            return kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_2__["Kinvey"].Files.find(query);
         })
             .then(function (files) {
             if (files && files.length) {
@@ -1385,18 +1089,22 @@ var CarService = /** @class */ (function () {
         });
     };
     CarService.prototype.login = function () {
-        if (!!kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_1__["Kinvey"].User.getActiveUser()) {
+        if (!!kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_2__["Kinvey"].User.getActiveUser()) {
             return Promise.resolve();
         }
         else {
-            return kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_1__["Kinvey"].User.login(_shared_config__WEBPACK_IMPORTED_MODULE_2__["Config"].kinveyUsername, _shared_config__WEBPACK_IMPORTED_MODULE_2__["Config"].kinveyPassword);
+            return kinvey_nativescript_sdk__WEBPACK_IMPORTED_MODULE_2__["Kinvey"].User.login(_shared_config__WEBPACK_IMPORTED_MODULE_3__["Config"].kinveyUsername, _shared_config__WEBPACK_IMPORTED_MODULE_3__["Config"].kinveyPassword);
         }
     };
     CarService.prototype.getMimeType = function (imageExtension) {
         var extension = imageExtension === "jpg" ? "jpeg" : imageExtension;
         return "image/" + extension.replace(/\./g, "");
     };
+    CarService = CarService_1 = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])()
+    ], CarService);
     return CarService;
+    var CarService_1;
 }());
 
 
